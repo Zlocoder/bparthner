@@ -71,6 +71,50 @@ class Customer {
 		}
 	}
 
+	public function login2($customer) {
+        if (is_numeric($customer)) {
+            $customer_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "customer WHERE customer_id = $customer AND status = '1'");
+
+            if ($customer_query->num_rows) {
+                $this->session->data['customer_id'] = $customer_query->row['customer_id'];
+
+                $this->customer_id = $customer_query->row['customer_id'];
+                $this->firstname = $customer_query->row['firstname'];
+                $this->lastname = $customer_query->row['lastname'];
+                $this->customer_group_id = $customer_query->row['customer_group_id'];
+                $this->email = $customer_query->row['email'];
+                $this->telephone = $customer_query->row['telephone'];
+                $this->fax = $customer_query->row['fax'];
+                $this->newsletter = $customer_query->row['newsletter'];
+                $this->address_id = $customer_query->row['address_id'];
+
+                $this->db->query("UPDATE " . DB_PREFIX . "customer SET ip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "' WHERE customer_id = '" . (int)$this->customer_id . "'");
+
+                return true;
+            }
+        } else {
+            if ($customer['customer_id']) {
+                $this->session->data['customer_id'] = $customer['customer_id'];
+
+                $this->customer_id = $customer['customer_id'];
+                $this->firstname = $customer['firstname'];
+                $this->lastname = $customer['lastname'];
+                $this->customer_group_id = $customer['customer_group_id'];
+                $this->email = $customer['email'];
+                $this->telephone = $customer['telephone'];
+                $this->fax = $customer['fax'];
+                $this->newsletter = $customer['newsletter'];
+                $this->address_id = $customer['address_id'];
+
+                $this->db->query("UPDATE " . DB_PREFIX . "customer SET ip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "' WHERE customer_id = '" . (int)$this->customer_id . "'");
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
 	public function logout() {
 		unset($this->session->data['customer_id']);
 

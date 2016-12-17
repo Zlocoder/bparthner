@@ -43,7 +43,8 @@ class ControllerTotalShipping extends Controller {
 			}
 
 			if (isset($this->session->data['shipping_method'])) {
-				$data['shipping_method'] = $this->session->data['shipping_method']['code'];
+				//$data['shipping_method'] = $this->session->data['shipping_method']['code'];
+				$data['shipping_method'] = $this->session->data['shipping_method'];
 			} else {
 				$data['shipping_method'] = '';
 			}

@@ -26,6 +26,10 @@ class ControllerCheckoutSuccess extends Controller {
 				$this->model_account_activity->addActivity('order_guest', $activity_data);
 			}
 
+            $this->load->model('checkout/order');
+
+            $this->model_checkout_order->addOrderHistory($this->session->data['order_id'], $this->config->get('config_order_status_id'));
+
 			unset($this->session->data['shipping_method']);
 			unset($this->session->data['shipping_methods']);
 			unset($this->session->data['payment_method']);

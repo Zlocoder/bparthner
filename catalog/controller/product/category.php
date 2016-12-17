@@ -33,11 +33,13 @@ class ControllerProductCategory extends Controller {
 			$page = 1;
 		}
 
+		/*
 		if (isset($this->request->get['limit'])) {
 			$limit = (int)$this->request->get['limit'];
 		} else {
 			$limit = $this->config->get('config_product_limit');
 		}
+		*/
 
 		$data['breadcrumbs'] = array();
 
@@ -175,7 +177,15 @@ class ControllerProductCategory extends Controller {
 				);
 			}
 
-			$data['products'] = array();
+            if (isset($this->request->get['limit'])) {
+                $limit = (int)$this->request->get['limit'];
+            } else if (empty($data['categories'])) {
+                $limit = 15;
+            } else {
+                $limit = 12;
+            }
+
+            $data['products'] = array();
 
 			$filter_data = array(
 				'filter_category_id' => $category_id,
@@ -221,6 +231,9 @@ class ControllerProductCategory extends Controller {
 					$rating = false;
 				}
 
+                $date_modified = date_create_from_format('Y-m-d H:i:s', $result['date_modified'])->getTimestamp();
+                $date_now = time();
+
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
@@ -231,7 +244,8 @@ class ControllerProductCategory extends Controller {
 					'tax'         => $tax,
 					'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
 					'rating'      => $result['rating'],
-					'href'        => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id'] . $url)
+					'href'        => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id'] . $url),
+                    'new'         => ($date_now - $date_modified) <= 2592000
 				);
 			}
 
@@ -319,7 +333,12 @@ class ControllerProductCategory extends Controller {
 
 			$data['limits'] = array();
 
-			$limits = array_unique(array($this->config->get('config_product_limit'), 25, 50, 75, 100));
+            if (empty($data['categories'])) {
+                $limits = array(15, 25, 50, 75, 100);
+            } else {
+                $limits = array(12, 24, 48, 96);
+            }
+
 
 			sort($limits);
 
@@ -349,13 +368,9 @@ class ControllerProductCategory extends Controller {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
 
-			$pagination = new Pagination();
-			$pagination->total = $product_total;
-			$pagination->page = $page;
-			$pagination->limit = $limit;
-			$pagination->url = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&page={page}');
-
-			$data['pagination'] = $pagination->render();
+			$data['pages_count'] = ceil($product_total / $limit);
+            $data['current_page'] = $page;
+            $data['pagination_url'] = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&page={page}');
 
 			$data['results'] = sprintf($this->language->get('text_pagination'), ($product_total) ? (($page - 1) * $limit) + 1 : 0, ((($page - 1) * $limit) > ($product_total - $limit)) ? $product_total : ((($page - 1) * $limit) + $limit), $product_total, ceil($product_total / $limit));
 
@@ -385,7 +400,7 @@ class ControllerProductCategory extends Controller {
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
 
-			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/product/category.tpl')) {
+            if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/product/category.tpl')) {
 				$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/product/category.tpl', $data));
 			} else {
 				$this->response->setOutput($this->load->view('default/template/product/category.tpl', $data));

@@ -13,7 +13,25 @@ class ModelAccountCustomer extends Model {
 
 		$customer_group_info = $this->model_account_customer_group->getCustomerGroup($customer_group_id);
 
-		$this->db->query("INSERT INTO " . DB_PREFIX . "customer SET customer_group_id = '" . (int)$customer_group_id . "', store_id = '" . (int)$this->config->get('config_store_id') . "', firstname = '" . $this->db->escape($data['firstname']) . "', lastname = '" . $this->db->escape($data['lastname']) . "', email = '" . $this->db->escape($data['email']) . "', telephone = '" . $this->db->escape($data['telephone']) . "', fax = '" . $this->db->escape($data['fax']) . "', custom_field = '" . $this->db->escape(isset($data['custom_field']['account']) ? json_encode($data['custom_field']['account']) : '') . "', salt = '" . $this->db->escape($salt = token(9)) . "', password = '" . $this->db->escape(sha1($salt . sha1($salt . sha1($data['password'])))) . "', newsletter = '" . (isset($data['newsletter']) ? (int)$data['newsletter'] : 0) . "', ip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "', status = '1', approved = '" . (int)!$customer_group_info['approval'] . "', date_added = NOW()");
+		$this->db->query("
+            INSERT INTO " . DB_PREFIX . "customer 
+            SET 
+                customer_group_id = '" . (int)$customer_group_id . "', 
+                store_id = '" . (int)$this->config->get('config_store_id') . "', 
+                firstname = '" . $this->db->escape($data['firstname']) . "', 
+                lastname = '" . $this->db->escape($data['lastname']) . "', 
+                email = '" . $this->db->escape($data['email']) . "', 
+                telephone = '" . $this->db->escape($data['telephone']) . "',
+                tel_digits = '" . ltrim(preg_replace('/[^0-9]/', '', $data['telephone']), '38') . "',
+                fax = '" . $this->db->escape($data['fax']) . "', 
+                custom_field = '" . $this->db->escape(isset($data['custom_field']['account']) ? json_encode($data['custom_field']['account']) : '') . "', 
+                salt = '" . $this->db->escape($salt = token(9)) . "', 
+                password = '" . $this->db->escape(sha1($salt . sha1($salt . sha1($data['password'])))) . "', 
+                newsletter = '" . (isset($data['newsletter']) ? (int)$data['newsletter'] : 0) . "', 
+                ip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "', 
+                status = '1', approved = '" . (int)!$customer_group_info['approval'] . "', 
+                date_added = NOW()
+            ");
 
 		$customer_id = $this->db->getLastId();
 
@@ -23,6 +41,7 @@ class ModelAccountCustomer extends Model {
 
 		$this->db->query("UPDATE " . DB_PREFIX . "customer SET address_id = '" . (int)$address_id . "' WHERE customer_id = '" . (int)$customer_id . "'");
 
+        /*
 		$this->load->language('mail/customer');
 
 		$subject = sprintf($this->language->get('text_subject'), html_entity_decode($this->config->get('config_name'), ENT_QUOTES, 'UTF-8'));
@@ -55,6 +74,7 @@ class ModelAccountCustomer extends Model {
 		$mail->setSubject($subject);
 		$mail->setText($message);
 		$mail->send();
+        */
 
 		// Send to main admin email if new account email is enabled
 		if ($this->config->get('config_account_mail')) {
@@ -143,6 +163,20 @@ class ModelAccountCustomer extends Model {
 
 		return $query->row;
 	}
+
+	public function getCustomerByTelephone($telephone) {
+        $query = $this->db->query("
+            SELECT * FROM " . DB_PREFIX . "customer 
+            WHERE tel_digits = '" . ltrim(preg_replace('/[^0-9]/', '', $telephone), '38') . "'");
+
+        return $query->row;
+    }
+
+    public function getCustomerById($id) {
+        $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "customer WHERE LOWER(email) = '" . $this->db->escape(utf8_strtolower($id)) . "'");
+
+        return $query->row;
+    }
 
 	public function getTotalCustomersByEmail($email) {
 		$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "customer WHERE LOWER(email) = '" . $this->db->escape(utf8_strtolower($email)) . "'");

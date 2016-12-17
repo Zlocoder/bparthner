@@ -7,9 +7,11 @@ class ControllerCommonCart extends Controller {
 		$this->load->model('extension/extension');
 
 		$total_data = array();
-		$total = 0;
+		$total['total'] = $this->cart->getTotal();
+        $products_count = $this->cart->countProducts();
 		$taxes = $this->cart->getTaxes();
 
+        /*
 		// Display prices
 		if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
 			$sort_order = array();
@@ -131,9 +133,12 @@ class ControllerCommonCart extends Controller {
 				'text'  => $this->currency->format($result['value']),
 			);
 		}
+        */
 
 		$data['cart'] = $this->url->link('checkout/cart');
 		$data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
+        $data['count'] = $products_count;
+        $data['total'] = $this->currency->format($total['total']);
 
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/cart.tpl')) {
 			return $this->load->view($this->config->get('config_template') . '/template/common/cart.tpl', $data);

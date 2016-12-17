@@ -1,35 +1,181 @@
 <?php
 class ControllerCheckoutLogin extends Controller {
 	public function index() {
-		$this->load->language('checkout/checkout');
+        $this->load->language('checkout/checkout');
 
-		$data['text_checkout_account'] = $this->language->get('text_checkout_account');
-		$data['text_checkout_payment_address'] = $this->language->get('text_checkout_payment_address');
-		$data['text_new_customer'] = $this->language->get('text_new_customer');
-		$data['text_returning_customer'] = $this->language->get('text_returning_customer');
-		$data['text_checkout'] = $this->language->get('text_checkout');
-		$data['text_register'] = $this->language->get('text_register');
-		$data['text_guest'] = $this->language->get('text_guest');
-		$data['text_i_am_returning_customer'] = $this->language->get('text_i_am_returning_customer');
-		$data['text_register_account'] = $this->language->get('text_register_account');
-		$data['text_forgotten'] = $this->language->get('text_forgotten');
-		$data['text_loading'] = $this->language->get('text_loading');
+        $this->load->model('account/address');
+        $this->load->model('extension/extension');
+        $this->load->model('account/customer');
 
-		$data['entry_email'] = $this->language->get('entry_email');
-		$data['entry_password'] = $this->language->get('entry_password');
+        // Totals
+        $total_data = array();
+        $total = 0;
+        $taxes = $this->cart->getTaxes();
 
-		$data['button_continue'] = $this->language->get('button_continue');
-		$data['button_login'] = $this->language->get('button_login');
+        $sort_order = array();
 
-		$data['checkout_guest'] = ($this->config->get('config_checkout_guest') && !$this->config->get('config_customer_price') && !$this->cart->hasDownload());
+        $results = $this->model_extension_extension->getExtensions('total');
 
-		if (isset($this->session->data['account'])) {
-			$data['account'] = $this->session->data['account'];
-		} else {
-			$data['account'] = 'register';
-		}
+        foreach ($results as $key => $value) {
+            $sort_order[$key] = $this->config->get($value['code'] . '_sort_order');
+        }
 
-		$data['forgotten'] = $this->url->link('account/forgotten', '', 'SSL');
+        array_multisort($sort_order, SORT_ASC, $results);
+
+        foreach ($results as $result) {
+            if ($this->config->get($result['code'] . '_status')) {
+                $this->load->model('total/' . $result['code']);
+
+                $this->{'model_total_' . $result['code']}->getTotal($total_data, $total, $taxes);
+            }
+        }
+
+        // Payment Methods
+        $method_data = array();
+
+        $results = $this->model_extension_extension->getExtensions('payment');
+
+        $recurring = $this->cart->hasRecurringProducts();
+
+        foreach ($results as $result) {
+            if ($this->config->get($result['code'] . '_status')) {
+                $this->load->model('payment/' . $result['code']);
+
+                $method = $this->{'model_payment_' . $result['code']}->getMethod();
+
+                if ($method) {
+                    if ($recurring) {
+                        if (method_exists($this->{'model_payment_' . $result['code']}, 'recurringPayments') && $this->{'model_payment_' . $result['code']}->recurringPayments()) {
+                            $method_data[$result['code']] = $method;
+                        }
+                    } else {
+                        $method_data[$result['code']] = $method;
+                    }
+                }
+            }
+        }
+
+        $sort_order = array();
+
+        foreach ($method_data as $key => $value) {
+            $sort_order[$key] = $value['sort_order'];
+        }
+
+        array_multisort($sort_order, SORT_ASC, $method_data);
+
+        $data['payment_methods'] = $method_data;
+
+        // Shipping methods
+        $method_data = array();
+
+        $results = $this->model_extension_extension->getExtensions('shipping');
+
+        foreach ($results as $result) {
+            if ($this->config->get($result['code'] . '_status')) {
+                $this->load->model('shipping/' . $result['code']);
+
+                $quote = $this->{'model_shipping_' . $result['code']}->getQuote();
+
+                if ($quote) {
+                    $method_data[$result['code']] = array(
+                        'title'      => $quote['title'],
+                        'quote'      => $quote['quote'],
+                        'cost'       => $quote['quote'][$quote['code']]['cost'],
+                        'sort_order' => $quote['sort_order'],
+                        'error'      => $quote['error']
+                    );
+                }
+            }
+        }
+
+        $sort_order = array();
+
+        foreach ($method_data as $key => $value) {
+            $sort_order[$key] = $value['sort_order'];
+        }
+
+        array_multisort($sort_order, SORT_ASC, $method_data);
+
+        $data['shipping_methods'] = $method_data;
+
+        $data['errors'] = array();
+
+	    if (!empty($this->request->post)) {
+            if ((utf8_strlen(trim($this->request->post['firstname'])) < 1) || (utf8_strlen(trim($this->request->post['firstname'])) > 32)) {
+                $data['errors']['firstname'] = $this->language->get('error_firstname');
+            }
+
+            if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
+                $data['errors']['telephone'] = $this->language->get('error_telephone');
+            }
+
+            if ((utf8_strlen(trim($this->request->post['address'])) < 3) || (utf8_strlen(trim($this->request->post['address'])) > 128)) {
+                $data['errors']['address'] = $this->language->get('error_address');
+            }
+
+            if (empty($this->request->post['shipping'])) {
+                $data['errors']['shipping'] = $this->language->get('error_shipping');
+            }
+
+            if (empty($this->request->post['payment'])) {
+                $data['errors']['payment'] = $this->language->get('error_payment');
+            }
+
+            if (empty($data['errors'])) {
+                if (!$customer = $this->model_account_customer->getCustomerByTelephone($this->request->post['telephone'])) {
+                    $customer_id = $this->model_account_customer->addCustomer(array(
+                        'firstname' => $this->request->post['firstname'],
+                        'lastname' => '',
+                        'email' => '',
+                        'telephone' => $this->request->post['telephone'],
+                        'fax' => '',
+                        'password' => $this->request->post['telephone'],
+                        'company' => '',
+                        'address_1' => $this->request->post['address'],
+                        'address_2' => '',
+                        'city' => 'Мариуполь',
+                        'postcode' => '',
+                        'country_id' => '220',
+                        'zone_id' => '171'
+                    ));
+                } else {
+                    $customer_id = $customer['customer_id'];
+                }
+
+                if ($customer_id) {
+                    $this->customer->login2($customer_id);
+                    $address = $this->model_account_address->getAddress($this->customer->getAddressId());
+                    $this->session->data['payment_address'] = $this->session->data['shipping_address'] = $address;
+                    $this->session->data['payment_method'] = $data['payment_methods'][$this->request->post['payment']];
+                    $this->session->data['shipping_method'] = $data['shipping_methods'][$this->request->post['shipping']];
+                    $this->session->data['comment'] = $this->request->post['comment'];
+                    $this->response->redirect($this->url->link('checkout/confirm'));
+                    return;
+                }
+            } else {
+                $data['firstname'] = $this->request->post['firstname'];
+                $data['telephone'] = $this->request->post['telephone'];
+                $data['address'] = $this->request->post['address'];
+                $data['shipping'] = $this->request->post['shipping'];
+                $data['payment'] = $this->request->post['payment'];
+                $data['comment'] = $this->request->post['comment'];
+            }
+        }
+
+	    if ($this->customer->isLogged()) {
+            $data['firstname'] = $this->customer->getFirstName();
+            $data['telephone'] = $this->customer->getTelephone();
+
+            $address = $this->model_account_address->getAddress($this->customer->getAddressId());
+            $data['address'] = $address['address_1'];
+        }
+
+        $data['header'] = $this->load->controller('common/header');
+        $data['column_left'] = $this->load->controller('common/column_left');
+        $data['column_right'] = $this->load->controller('common/column_right');
+        $data['content_top'] = $this->load->controller('common/content_top');
+        $data['content_bottom'] = $this->load->controller('common/content_bottom');
+        $data['footer'] = $this->load->controller('common/footer');
 
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/checkout/login.tpl')) {
 			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/checkout/login.tpl', $data));

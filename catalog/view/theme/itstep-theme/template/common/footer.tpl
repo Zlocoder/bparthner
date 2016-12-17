@@ -1,53 +1,70 @@
+</main>
+
 <footer>
   <div class="container">
-    <div class="row">
-      <?php if ($informations) { ?>
-      <div class="col-sm-3">
-        <h5><?php echo $text_information; ?></h5>
-        <ul class="list-unstyled">
-          <?php foreach ($informations as $information) { ?>
-          <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
-          <?php } ?>
-        </ul>
-      </div>
-      <?php } ?>
-      <div class="col-sm-3">
-        <h5><?php echo $text_service; ?></h5>
-        <ul class="list-unstyled">
-          <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
-          <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
-          <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
-        </ul>
-      </div>
-      <div class="col-sm-3">
-        <h5><?php echo $text_extra; ?></h5>
-        <ul class="list-unstyled">
-          <li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
-          <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
-          <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
-          <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
-        </ul>
-      </div>
-      <div class="col-sm-3">
-        <h5><?php echo $text_account; ?></h5>
-        <ul class="list-unstyled">
-          <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-          <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-          <li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li>
-          <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
-        </ul>
-      </div>
+
+    <div class="logo2"><a href="<?= $home ?>"><img src="<?php echo $logo ?>" alt="business-partner_logo"></a></div>
+
+    <div class="footer_katalog">
+      <div class="title">Каталог</div>
+      <ul>
+        <li><a href="<?= $home ?>">Наша продукция</a></li>
+        <li><a href="<?= $cat_60 ?>">Канцтовары</a></li>
+        <li><a href="<?= $cat_61 ?>">Бумажные изделия</a></li>
+        <li><a href="<?= $cat_59 ?>">Офисная техника</a></li>
+        <li><a href="<?= $cat_62 ?>">Галантерея</a></li>
+      </ul>
     </div>
-    <hr>
-    <p><?php echo $powered; ?></p>
+
+    <div class="footer_info">
+      <div class="title">Информация</div>
+      <ul>
+        <li><a href="<?= $about ?>">О компании</a></li>
+        <li><a href="<?= $delivery ?>">Доставка</a></li>
+        <li><a href="<?= $discount ?>">Скидки</a></li>
+        <li><a href="<?= $contact ?>">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_tel">
+      <div class="title">Номера для заказов:</div><span><?php echo $telephone ?></span>
+    </div>
+
+    <div class="repost">
+      <div class="repost_child"><a href="#"><img src="/catalog/view/theme/itstep-theme/bp-site-1/img/repost/vk.png" alt="vk"></a></div>
+      <div class="repost_child"><a href="#"><img src="/catalog/view/theme/itstep-theme/bp-site-1/img/repost/google.png" alt="google"></a></div>
+      <div class="repost_child"><a href="#"><img src="/catalog/view/theme/itstep-theme/bp-site-1/img/repost/fb.png" alt="facebook"></a></div>
+      <div class="repost_child"><a href="#"><img src="/catalog/view/theme/itstep-theme/bp-site-1/img/repost/ok.png" alt="ok"></a></div>
+      <div class="repost_child"><a href="#"><img src="/catalog/view/theme/itstep-theme/bp-site-1/img/repost/tw.png" alt="twitter"></a></div>
+      <div class="repost_child"><a href="#"><img src="/catalog/view/theme/itstep-theme/bp-site-1/img/repost/insta.png" alt="instagram"></a></div>
+    </div>
   </div>
 </footer>
 
-<!--
-OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
-Please donate via PayPal to donate@opencart.com
-//-->
+<div class="top" style="display: block;">
+  <img src="/catalog/view/theme/itstep-theme/bp-site-1/img/top_arrow.png" alt="">
+</div>
 
-<!-- Theme created by Welford Media for OpenCart 2.0 www.welfordmedia.co.uk -->
+<script>
+  var Kh = 0.5;
+  $(window).scroll(function (e) {
+    if ($(window).scrollTop() >= Kh * $(window).height()) {
+      $('.top').fadeIn('slow');
+    } else {
+      $('.top').fadeOut('slow');
+    }
+  })
+  $('.top').click(function (e) {
+    $('body').animate({scrollTop: 0}, 500);
+  });
+</script>
 
-</body></html>
+<script src="/catalog/view/javascript/common.js"></script>
+
+
+<?php foreach ($scripts as $script) { ?>
+<script src="<?php echo $script; ?>" type="text/javascript"></script>
+<?php } ?>
+
+</body>
+</html>

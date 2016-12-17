@@ -668,6 +668,7 @@ class ModelCheckoutOrder extends Model {
 
 				$text .= $language->get('text_new_footer') . "\n\n";
 
+                /*
 				$mail = new Mail();
 				$mail->protocol = $this->config->get('config_mail_protocol');
 				$mail->parameter = $this->config->get('config_mail_parameter');
@@ -684,6 +685,7 @@ class ModelCheckoutOrder extends Model {
 				$mail->setHtml($html);
 				$mail->setText($text);
 				$mail->send();
+				*/
 
 				// Admin Alert Mail
 				if ($this->config->get('config_order_mail')) {

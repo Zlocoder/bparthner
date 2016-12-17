@@ -36,9 +36,9 @@
 					<div class="logo">
 						<a href="#"><img src="img/logo1.png" alt="business-partner_logo"></a>
 					</div>
-					<form action="#">
+					<form id="search" action="#">
 						<input type="text" placeholder="искать товар" name="product_name">
-						<input type="submit" value=''>
+						<button type="submit"></button>
 					</form>
 				</div>
 				
@@ -457,7 +457,7 @@
 
 
 		<!-- slider begin -->
-		<div id="slider">
+		<div id="slider" class="home-slider">
 			<div><img src="img/slider_pic1.png" alt=""></div>
 			<div><img src="img/slider_pic1.png" alt=""></div>
 			<div><img src="img/slider_pic1.png" alt=""></div>
@@ -490,7 +490,7 @@
 					<div class="card_price">56.30 <sup>грн</sup></div>
 		
 					<form action="#">
-					<input type="button" value="Купить">
+						<input type="button" value="Купить">
 					</form>
 					</div>
 				</div>
@@ -834,7 +834,7 @@
 	<script>
 		$('#slider').owlCarousel({
 			items: 1,
-			autoplay: true,/*включить автопромотку*/
+			autoplay: false,/*включить автопромотку*/
 			autoplayTimeout: 3000,/*значение в миллисекудах*/
 			loop: true,
 		});

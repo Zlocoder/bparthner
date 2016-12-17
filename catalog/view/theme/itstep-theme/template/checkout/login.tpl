@@ -1,41 +1,110 @@
-<div class="row">
-  <div class="col-sm-6">
-    <h2><?php echo $text_new_customer; ?></h2>
-    <p><?php echo $text_checkout; ?></p>
-    <div class="radio">
-      <label>
-        <?php if ($account == 'register') { ?>
-        <input type="radio" name="account" value="register" checked="checked" />
-        <?php } else { ?>
-        <input type="radio" name="account" value="register" />
-        <?php } ?>
-        <?php echo $text_register; ?></label>
+<?= $header ?>
+
+<div class="container">
+  <div class="border-check">
+    <h1>Оформление заказа</h1>
+    <div class="block-check">
+      <form method="post" action="">
+        <div>
+          <span class="name-check">Имя, фамилия</span>
+          <input type="text" name="firstname" value="<?= isset($firstname) ? $firstname : '' ?>" />
+
+          <?php if (isset($errors['firstname'])) { ?>
+            <span class="validation fail"></span>
+            <span class="title"><?= $errors['firstname'] ?></span>
+          <?php } else { ?>
+            <span class="validation"></span>
+            <span class="title"></span>
+          <?php } ?>
+        </div>
+
+        <div>
+          <span class="name-check">Телефон</span>
+          <input type="text" name="telephone" value="<?= isset($telephone) ? $telephone : '' ?>" />
+
+          <?php if (isset($errors['telephone'])) { ?>
+            <span class="validation fail"></span>
+            <span class="title"><?= $errors['telephone'] ?></span>
+          <?php } else { ?>
+            <span class="validation"></span>
+            <span class="title"></span>
+          <?php } ?>
+        </div>
+
+        <div>
+          <span class="name-check">Адрес</span>
+          <input type="text" name="address" value="<?= isset($address) ? $address : '' ?>" />
+
+          <?php if (isset($errors['address'])) { ?>
+            <span class="validation fail"></span>
+            <span class="title"><?= $errors['address'] ?></span>
+          <?php } else { ?>
+            <span class="validation"></span>
+            <span class="title"></span>
+          <?php } ?>
+        </div>
+
+        <div>
+          <span class="name-check">Способ доставки</span>
+          <select name="shipping">
+            <option value="">Выберите способ доставки...</option>
+            <?php foreach ($shipping_methods as $key => $method) { ?>
+                <?php if (isset($shipping) && $shipping == $key) { ?>
+                  <option selected value="<?= $key ?>"><?= $method['title'] ?></option>
+                <?php } else { ?>
+                  <option value="<?= $key ?>"><?= $method['title'] ?></option>
+                <?php } ?>
+            <?php } ?>
+          </select>
+
+          <?php if (isset($errors['shipping'])) { ?>
+            <span class="validation fail"></span>
+            <span class="title"><?= $errors['shipping'] ?></span>
+          <?php } else { ?>
+            <span class="validation"></span>
+            <span class="title"></span>
+          <?php } ?>
+        </div>
+
+        <div>
+          <span class="name-check">Способ оплаты</span>
+          <select name="payment">
+            <option value="">Выберите способ оплаты...</option>
+            <?php foreach ($payment_methods as $key => $method) { ?>
+                <?php if (isset($payment) && $payment == $key) { ?>
+                  <option selected value="<?= $key ?>"><?= $method['title'] ?></option>
+                <?php } else { ?>
+                  <option value="<?= $key ?>"><?= $method['title'] ?></option>
+                <?php } ?>
+            <?php } ?>
+          </select>
+
+          <?php if (isset($errors['payment'])) { ?>
+            <span class="validation fail"></span>
+            <span class="title"><?= $errors['payment'] ?></span>
+          <?php } else { ?>
+            <span class="validation"></span>
+            <span class="title"></span>
+          <?php } ?>
+        </div>
+
+        <div>
+          <span class="name-check">Коментарий</span>
+          <textarea name="comment"><?= isset($comment) ? $comment : ''?></textarea>
+
+          <?php if (isset($errors['comment'])) { ?>
+            <span class="validation fail"></span>
+            <span class="title"><?= $errors['comment'] ?></span>
+          <?php } else { ?>
+            <span class="validation"></span>
+            <span class="title"></span>
+          <?php } ?>
+        </div>
+
+        <input type="submit" class="check-in" value="Оформить заказ" />
+      </form>
     </div>
-    <?php if ($checkout_guest) { ?>
-    <div class="radio">
-      <label>
-        <?php if ($account == 'guest') { ?>
-        <input type="radio" name="account" value="guest" checked="checked" />
-        <?php } else { ?>
-        <input type="radio" name="account" value="guest" />
-        <?php } ?>
-        <?php echo $text_guest; ?></label>
-    </div>
-    <?php } ?>
-    <p><?php echo $text_register_account; ?></p>
-    <input type="button" value="<?php echo $button_continue; ?>" id="button-account" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary" />
-  </div>
-  <div class="col-sm-6">
-    <h2><?php echo $text_returning_customer; ?></h2>
-    <p><?php echo $text_i_am_returning_customer; ?></p>
-    <div class="form-group">
-      <label class="control-label" for="input-email"><?php echo $entry_email; ?></label>
-      <input type="text" name="email" value="" placeholder="<?php echo $entry_email; ?>" id="input-email" class="form-control" />
-    </div>
-    <div class="form-group">
-      <label class="control-label" for="input-password"><?php echo $entry_password; ?></label>
-      <input type="password" name="password" value="" placeholder="<?php echo $entry_password; ?>" id="input-password" class="form-control" />
-      <a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a></div>
-    <input type="button" value="<?php echo $button_login; ?>" id="button-login" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary" />
   </div>
 </div>
+
+<?php $footer ?>
