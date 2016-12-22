@@ -509,11 +509,18 @@ position: absolute;
 	font-size: 20px;
 }
 
+.owl-carousel .quality2 {
+	z-index: 100;
+}
+
 .container2{
-	
 	position: absolute;
     left: 1px;
     top: 5px;
+}
+
+.owl-carousel .container2 {
+	z-index: 99;
 }
 
 .new2{
@@ -523,6 +530,10 @@ position: absolute;
     width: 123px;
     right: -5px;
     top: -4px;
+}
+
+.owl-carousel .new2 {
+	z-index: 100;
 }
 
 
@@ -2338,6 +2349,7 @@ overflow: hidden;
 	bottom: 10px;
 	left: 10px;
 	cursor: pointer;
+	z-index: 101;
 }
 
 

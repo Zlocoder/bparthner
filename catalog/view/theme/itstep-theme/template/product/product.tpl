@@ -35,12 +35,10 @@
             <div class="product-info_desc clearfix">
                 <table class="product_desc" cellspacing="0">
                     <tbody>
-                        <?php if ($article) { ?>
-                            <tr>
-                                <td>Артикул</td>
-                                <td><?= $article ?></td>
-                            </tr>
-                        <?php } ?>
+                        <tr>
+                            <td>Артикул</td>
+                            <td><?= $article ?></td>
+                        </tr>
 
                         <?php foreach ($attribute_groups as $attribute_group) { ?>
                             <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
@@ -117,28 +115,6 @@
         <div class="similar_products">
             <h2>Похожие товары</h2>
             <div class="products">
-                <?php foreach ($products as $product) { ?>
-                    <div class="trade_card">
-                        <?php if ($product['special'] && ($product['price'] - $product['special']) > 0) { ?>
-                            <div class="container2">
-                                <div class="quality2">-<?= 100 - round($product['special'] * 100 / $product['price']) ?>%</div>
-                                <img src="/catalog/view/theme/itstep-theme/bp-site-1/img/sale.png" alt=" ">
-                            </div>
-                        <?php } ?>
-
-                        <div class="trade_card_img"><img src="<?= $product['thumb'] ?>" alt="Sony VAIO" title="Sony VAIO"></div>
-
-                        <div class="title_trade_card"><a href="index_tradecard.html"><?= $product['name'] ?></a></div>
-                        <div class="trade_card_description"><?= $product['description'] ?></div>
-
-                        <div class="container_price clearfix">
-                            <div class="card_price"><?= $product['price'] ?></div>
-
-                            <button type="submit">Купить</button>
-                        </div>
-                    </div>
-                <?php } ?>
-
                 <?php foreach ($products as $product) { ?>
                     <div class="trade_card">
                         <?php if ($product['special'] && ($product['price'] - $product['special']) > 0) { ?>

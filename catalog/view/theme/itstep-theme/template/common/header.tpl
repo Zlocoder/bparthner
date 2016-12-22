@@ -96,6 +96,8 @@
     <div class="container">
       <nav>
         <ul id="nav" class="clearfix">
+          <?php $ids = array('technic', 'stationary', 'paper', 'notion', 'services', 'gifts'); ?>
+          <?php $i = 0; ?>
           <?php foreach ($categories as $category) { ?>
             <li>
               <a href="<?= $category['href'] ?>">
@@ -104,7 +106,7 @@
               </a>
 
               <?php if (!empty($category['childrens'])) { ?>
-                <ul class="subs">
+                <ul class="subs" id="<?= $ids[$i++] ?>">
                   <?php foreach ($category['childrens'] as $children1) { ?>
                     <li>
                       <a href="<?= $children1['href'] ?>">
