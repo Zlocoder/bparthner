@@ -189,9 +189,10 @@ $('#button-search').bind('click', function() {
 });
 
 $('#content input[name=\'search\']').bind('keydown', function(e) {
-	if (e.keyCode == 13) {
-		$('#button-search').trigger('click');
-	}
+	if (e.keyCode != 13) {
+    } else {
+      $('#button-search').trigger('click');
+    }
 });
 
 $('select[name=\'category_id\']').on('change', function() {
