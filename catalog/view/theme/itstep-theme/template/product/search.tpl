@@ -1,3 +1,10 @@
+<?php
+  /*echo '<pre>';*/
+  /*var_dump($categories);*/
+  /*echo '</pre>';*/
+?>
+
+
 <?php echo $header; ?>
 <div class="container">
   <ul class="breadcrumb">
@@ -81,7 +88,7 @@
         </div>
         <div class="col-sm-3 text-right">
           <select id="input-sort" class="form-control col-sm-3" onchange="location = this.value;">
-            <?php foreach ($sorts as $sorts) { ?>
+            <?php foreach ($sorts as $sort) { ?>
             <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
             <option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
             <?php } else { ?>
