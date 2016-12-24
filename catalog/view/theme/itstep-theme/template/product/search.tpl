@@ -1,17 +1,21 @@
 <?php
-  /*echo '<pre>';*/
-  /*var_dump($categories);*/
-  /*echo '</pre>';*/
+  //echo '<pre>';
+  //var_dump($products);
+  //echo '</pre>';
 ?>
 
 
 <?php echo $header; ?>
 <div class="container">
-  <ul class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-    <?php } ?>
-  </ul>
+    <div class="way">
+        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+
+        <span><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></span>
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+        <?php } ?>
+    </div>
+
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
@@ -159,6 +163,7 @@
         <div class="col-sm-6 text-right"><?php echo $results; ?></div>
       </div>
       <?php } else { ?>
+
       <p><?php echo $text_empty; ?></p>
       <?php } ?>
       <?php echo $content_bottom; ?></div>

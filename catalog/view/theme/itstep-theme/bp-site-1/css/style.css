@@ -50,6 +50,7 @@ body {
 	z-index: 100;
 	/* ?  */
 	background: #2a70c2 scroll;
+	box-sizing: content-box;
 }
 
 
@@ -367,6 +368,7 @@ color:black;
 	margin-top: 12px;
 	font-family: "Roboto-Light", serif;
 	font-size: 13px;
+	text-align: center;
 }
 
 .cart  {
@@ -692,12 +694,12 @@ display: none;
 #nav > li > a {
 	color: #333;
 	display: block;
-	font-size: 1em;
+	/*font-size: 1em;*/
 	line-height: 49px;
 	padding: 0 10px;
 	text-transform: uppercase;
-	font-family: "RobotoRegular";
-	font-size: 13px;
+	font-family: "RobotoRegular", serif;
+	font-size: 12px;
 	text-align: center;
 }
 #nav > li:hover > a,
