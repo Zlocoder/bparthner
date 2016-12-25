@@ -430,7 +430,9 @@ color:black;
 	font-size: 0;
 }
 .products:after {
-	clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 .trade_card{
 width: 220px;	
@@ -438,7 +440,7 @@ border: 1px solid #d7d7d7;
 float: left;
 /*float: left;*/
 /*margin-left: 12px;*/
-margin-left: 16px;
+margin-left: 10px;
 margin-top: 12px;
 border-radius: 4px;
 position: relative;

@@ -1,16 +1,17 @@
 <?php echo $header; ?>
 <div class="container">
 
-    <!-- breadcrumps begin -->
+    <!-- breadcrumbs begin -->
     <div class="way">
-        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+        <?php foreach ($breadcrumbs as $i => $breadcrumb) { ?>
 
         <span><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></span>
+        <? if ($i < count($breadcrumbs) - 1) { ?>
         <i class="fa fa-angle-right" aria-hidden="true"></i>
-
+        <? } ?>
         <?php } ?>
     </div>
-    <!-- breadcrumps end -->
+    <!-- breadcrumbs end -->
 
   <div class="row">
     <?php echo $column_left; ?>
@@ -27,7 +28,7 @@
 
       <!-- поисковая выдача begin -->
 
-      <div class="products">
+      <div class="products products-5n">
         <?php foreach ($products as $product) { ?>
         <div class="trade_card">
           <?php if ($product['special'] && ($product['price'] - $product['special']) > 0) { ?>
