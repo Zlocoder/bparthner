@@ -383,10 +383,11 @@
   },
   "css": [
     "grid.less",
+    "tables.less",
     "forms.less",
     "buttons.less",
     "responsive-utilities.less"
   ],
   "js": [],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=3e8fa272e1bf5a2e3ded06a3c1077a6b"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=cf0b9620f283dd6cd11fba34bfd22dec"
 }

@@ -98,7 +98,8 @@
 
   <main>
     <div class="container">
-      <nav>
+      <div class="row">
+        <nav>
         <ul id="nav" class="clearfix">
           <?php $ids = array('technic', 'stationary', 'paper', 'notion', 'services', 'gifts'); ?>
           <?php $i = 0; ?>
@@ -140,4 +141,5 @@
           <?php } ?>
         </ul>
       </nav>
+      </div>
     </div>

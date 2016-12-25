@@ -54,6 +54,7 @@
 
       <!-- поисковая выдача end -->
 
+      <!-- TODO: добавить стилизацию пагинации -->
       <!-- пагинация begin -->
       <div class="row">
         <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>

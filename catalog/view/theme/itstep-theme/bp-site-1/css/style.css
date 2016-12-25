@@ -2576,3 +2576,10 @@ width: 100%;
 #content h2 {
     font-family: "Roboto-Bold", serif;
 }
+
+.table-responsive {
+    background-color: #fff;
+}
+.table {
+    margin-bottom: 0;
+}
