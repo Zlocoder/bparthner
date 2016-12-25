@@ -1795,3 +1795,513 @@
 2016-12-25 1:03:34 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
 2016-12-25 1:03:34 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
 2016-12-25 1:03:34 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2016-12-25 1:13:00 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:00 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:00 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:00 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:00 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:00 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2016-12-25 1:13:08 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:08 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:08 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:08 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:08 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:08 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2016-12-25 1:13:17 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:17 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:17 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:17 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:17 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:13:17 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2016-12-25 1:26:42 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:26:42 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:26:42 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:26:42 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:26:42 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-25 1:26:42 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-25 1:26:51 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:25 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:11:25 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:11:25 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:11:25 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:11:25 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:11:25 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 109
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:11:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:14:11 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 110
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:15:31 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 113
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 112
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:06 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 115
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:16:39 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 157
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:00 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 160
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 159
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:18:52 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 162
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:20:37 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 165
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:24:28 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 302
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:19 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 305
+2016-12-26 0:25:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:25:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:25:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:25:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:25:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:25:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 197
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:29:03 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 200
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: value in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Array to string conversion in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 199
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: href in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:30:20 - PHP Notice:  Undefined index: text in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\search.tpl on line 202
+2016-12-26 0:43:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:43:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:43:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:43:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:43:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2016-12-26 0:43:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15

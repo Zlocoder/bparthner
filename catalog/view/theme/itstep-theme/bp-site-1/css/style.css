@@ -429,6 +429,9 @@ color:black;
 .products {
 	font-size: 0;
 }
+.products:after {
+	clear: both;
+}
 .trade_card{
 width: 220px;	
 border: 1px solid #d7d7d7;
