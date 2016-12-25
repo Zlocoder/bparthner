@@ -1,5 +1,6 @@
 <?php echo $header; ?>
 <div class="container">
+  <div class="row">
   <!-- breadcrumbs begin -->
   <div class="way">
     <?php foreach ($breadcrumbs as $i => $breadcrumb) { ?>
@@ -11,6 +12,7 @@
     <?php } ?>
   </div>
   <!-- breadcrumbs end -->
+  </div>
 
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>

@@ -1,16 +1,18 @@
 <?php echo $header; ?>
 
 <div class="container">
-    <div class="way">
-        <?php $last = array_pop($breadcrumbs) ?>
+    <div class="row">
+        <!-- breadcrumbs begin -->
+        <div class="way">
+            <?php foreach ($breadcrumbs as $i => $breadcrumb) { ?>
 
-        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-            <span><a href="<?= $breadcrumb['href'] ?>"><?= $breadcrumb['text'] ?></a></span>
-
+            <span><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></span>
+            <? if ($i < count($breadcrumbs) - 1) { ?>
             <i class="fa fa-angle-right" aria-hidden="true"></i>
-        <?php } ?>
-
-        <span><a href="<?= $last['href'] ?>"><?= $last['text'] ?></a></span>
+            <? } ?>
+            <?php } ?>
+        </div>
+        <!-- breadcrumbs end -->
     </div>
 
     <?php echo $column_left; ?>
