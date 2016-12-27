@@ -1,6 +1,7 @@
 <?php echo $header; ?>
 
     <div class="container">
+    <div class="row">
         <div class="way">
             <span class="way1"><a href="<?= $home ?>">Главная</a> </span>
             <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -8,6 +9,7 @@
             <i class="fa fa-angle-right" aria-hidden="true"></i>
             <span class="way2"> <a href="#"><?= $category_info['name'] ?></a></span>
         </div>
+    </div>
 
         <div class="article clearfix">
             <?= $column_left ?>

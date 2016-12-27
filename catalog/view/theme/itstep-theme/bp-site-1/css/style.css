@@ -5,7 +5,7 @@
 	
 }
 @font-face {
-	font-family: "Roboto-Light";
+	font-family: "Roboto-Bold";
 	src: url('../fonts/Roboto-Bold.ttf');
 	font-weight: bold;	
 }
@@ -21,11 +21,17 @@ font-family: "Roboto-Regular";
 	font-weight: normal;
 }
 html, body {height: 100%;}
-body {
-	background: repeating-linear-gradient(-45deg, white 0, white 10px, rgba(230, 230, 230, .15) 10px, rgba(230, 230, 230, .15) 15px);
+
+main {
+    flex: 1 0 auto;
 }
 
-
+body {
+    background: repeating-linear-gradient(-45deg, white 0, white 10px, rgba(230, 230, 230, .15) 10px, rgba(230, 230, 230, .15) 15px);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
 .red3 {color: #ed2a32;}
 
@@ -40,16 +46,17 @@ body {
 	padding: 5px 30px 5px 40px;
 	color: white;
 	font-size: 18px;
-	font-family: "Roboto-Light";
+	font-family: "Roboto-Light", serif;
 	float: left;
-	background-color: #2a70c2;
 	border-radius: 0 0 8px 8px;
 	box-shadow: 0 2px 5px #c0d4ed;
 	cursor: pointer;
 	/*position: relative;*/
 	position: fixed;
 	z-index: 100;
-	background-attachment: scroll;/* ?  */
+	/* ?  */
+	background: #2a70c2 scroll;
+	box-sizing: content-box;
 }
 
 
@@ -101,7 +108,7 @@ left: 60px;
 }
 
 .header_top_line li a {
-	font-family: "Roboto-Light";
+	font-family: "Roboto-Light", serif;
 	font-size: 14px;
 	text-decoration: none;
 	color: black;
@@ -121,6 +128,13 @@ footer{
 	background: #f7f7f7;
 	box-shadow: inset 0 5px 3px #e8e8e8, inset 0 -3px 54px #e8e8e8;
 	margin-top: 44px;
+
+    flex: 0 0 auto;
+
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
 }
 
 footer.anothe-footer {
@@ -149,7 +163,7 @@ footer.anothe-footer {
 
 .logo2{
 	float: left;
-	margin-right: 40px;
+	margin-right: 30px;
 }
 
 
@@ -173,7 +187,7 @@ footer > .container > div {
 }
 .footer_katalog{
 	display: inline-block;
-	font-family: "Roboto-Light";
+	font-family: "Roboto-Light", serif;
 	margin-left: 30px;
 	-webkit-user-select: none;/* чтобы нельзя было выделить или скопировать текст!  */
 	-moz-user-select: none;/* чтобы нельзя было выделить или скопировать текст!  */
@@ -216,7 +230,7 @@ footer > .container > div {
 
 .footer_tel{
 display: inline-block;
-font-family: "Roboto-Regular";
+	font-family: "Roboto-Regular", serif;
 	margin-left: 81px;
 
 }
@@ -244,7 +258,7 @@ font-family: "Roboto-Regular";
 
 .footer_tel span{
 	display: inline-block;
-	font-family: "Opensans_light";
+	font-family: "Opensans_light", serif;
 	font-size: 22pt;
 	color: #2f73c5;
 	margin-top: 10px;
@@ -254,7 +268,7 @@ font-family: "Roboto-Regular";
 .container div a{
 text-decoration: none;
 color:black;
-	font-family: "Roboto-Light";	
+	font-family: "Roboto-Light", serif;
 	font-size: 12pt;
 
 }
@@ -265,7 +279,7 @@ color:black;
 
 .title{
 
-font-family: "Roboto-Regular";
+	font-family: "Roboto-Regular", serif;
 	font-size: 12pt;
 }
 .title2{
@@ -336,9 +350,8 @@ font-family: "Roboto-Regular";
 	border: none;
 	height: 41px;
 	width: 41px;
-	background-image: url(../img/size.png), linear-gradient(#235da2, #2c75cb);
-	background-repeat: no-repeat;
-	background-position: center;
+
+	background: url(../img/size.png) no-repeat center, linear-gradient(#235da2, #2c75cb);
 	border-radius: 8px;
 	outline: none;
 	cursor: pointer;
@@ -358,16 +371,20 @@ font-family: "Roboto-Regular";
 	/* width: 100%; */
 	display: block;
 	text-align: center;
+    text-decoration: none;
 }
-
+.header_right a.cart-link-1:hover {
+    text-decoration: none;
+}
 .header_right__left {
 	float: left;
 }
 
 .order_qual {
 	margin-top: 12px;
-	font-family: "Roboto-Light";
+	font-family: "Roboto-Light", serif;
 	font-size: 13px;
+	text-align: center;
 }
 
 .cart  {
@@ -395,10 +412,7 @@ font-family: "Roboto-Regular";
 .header_right > .cart > a.cart-link-2 {
 	width: 62px;
 	height: 62px;
-	background-image: url(../img/cart.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: #f0f0f0;
+	background: #f0f0f0 url(../img/cart.png) no-repeat center;
 	display: inline-block;
 	/*border: 1px solid gray;*/
 	border-radius: 8px;
@@ -413,7 +427,12 @@ font-family: "Roboto-Regular";
 	user-select: none;/* чтобы нельзя было выделить или скопировать текст!  */
 }
 .products {
-	font-size: 0px;
+	font-size: 0;
+}
+.products:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 .trade_card{
 width: 220px;	
@@ -421,7 +440,7 @@ border: 1px solid #d7d7d7;
 float: left;
 /*float: left;*/
 /*margin-left: 12px;*/
-margin-left: 16px;
+margin-left: 10px;
 margin-top: 12px;
 border-radius: 4px;
 position: relative;
@@ -440,11 +459,11 @@ box-sizing: border-box;/* чтобы из за падинга не распух�
 }*/
 
 .products-5n .trade_card:nth-child(5n + 1){
-	margin-left: 0px;
+	margin-left: 0;
 }
 
 .products-4n .trade_card:nth-child(4n + 1) {
-	margin-left: 0px;
+	margin-left: 0;
 }
 
 /*
@@ -464,8 +483,7 @@ box-sizing: border-box;/* чтобы из за падинга не распух�
 .trade_card_img{
 	height: 200px;
 	width: 200px;
-	margin: 0 auto;
-	margin-top: 18px;
+	margin: 18px auto 0;
 }
 
 .title_trade_card{
@@ -475,14 +493,14 @@ box-sizing: border-box;/* чтобы из за падинга не распух�
 }
 .container > .trade_card > .title_trade_card a{
 	color: #2a70c2;
-	font-family: "Roboto-Light";
+	font-family: "Roboto-Light", serif;
 	font-size: 13pt;
 	text-decoration: underline;
 	}	
 
 .trade_card_description{
-	padding: 0 9px;	
-	font-family: "Roboto-Light";
+	padding: 0 9px;
+	font-family: "Roboto-Light", serif;
 	margin-top: 18px;
 	    font-size: 11pt;
 	height: 90px;
@@ -505,15 +523,22 @@ position: absolute;
 	top: 15px;
 	transform: translateX(-50%);
 	color: white;
-	font-family: "Roboto-Light";
+	font-family: "Roboto-Light", serif;
 	font-size: 20px;
 }
 
+.owl-carousel .quality2 {
+	z-index: 100;
+}
+
 .container2{
-	
 	position: absolute;
     left: 1px;
     top: 5px;
+}
+
+.owl-carousel .container2 {
+	z-index: 99;
 }
 
 .new2{
@@ -525,20 +550,24 @@ position: absolute;
     top: -4px;
 }
 
+.owl-carousel .new2 {
+	z-index: 100;
+}
+
 
 .card_price{
 	color: #ff7800;	
 	font-weight: bold;
-font-family: "Roboto-Regular";
+	font-family: "Roboto-Regular", serif;
 float: left;
 font-size: 15pt;
 	transform: translateY(50%);
 }
 
 .container_price button{
-	font-family: "Roboto-Light";
+	font-family: "Roboto-Light", serif;
 	float: right;
-	width: 94px;
+	width: 90px;
 	height: 41px;
 /* 	border-top: 5px groove #1461bc; */
 	background: linear-gradient(to bottom, #3074c5, #2d5d96);
@@ -571,7 +600,7 @@ font-size: 15pt;
 	padding: 10px;
 	margin: 0 auto;
 	text-align: center;
-	font-family: "Roboto-Light";
+	font-family: "Roboto-Light", serif;
 	margin-top: 38px;
 	margin-bottom: 34px;
 	background: linear-gradient(to top, #f1f1f1, #fafafa, #f4f4f4, #fafafa, #eeefef);
@@ -622,11 +651,10 @@ font-size: 15pt;
 #nav {
 	padding: 0;
 	margin: 0;
-	background-color: #f5f5f5;
 	position: relative;
 	z-index: 10;
 	box-shadow: 0 1px 0 0 #e1e7ee;
-	background: linear-gradient(to top, #f4f3f3, #fff);
+	background: #f5f5f5 linear-gradient(to top, #f4f3f3, #fff);
 
 }
 
@@ -687,12 +715,12 @@ display: none;
 #nav > li > a {
 	color: #333;
 	display: block;
-	font-size: 1em;
+	/*font-size: 1em;*/
 	line-height: 49px;
 	padding: 0 10px;
 	text-transform: uppercase;
-	font-family: "RobotoRegular";
-	font-size: 13px;
+	font-family: "RobotoRegular", serif;
+	font-size: 12px;
 	text-align: center;
 }
 #nav > li:hover > a,
@@ -1666,12 +1694,13 @@ h2.achievements{
 .nav-products{
 	width: 16%;
 	float: left;
+	border-right: 1px solid #ebebeb;
 }
 
 table.nav-article-table td{
 	display: block;
 	border-bottom: 1px solid #ebebeb;
-	font-family: "Roboto-Light"
+	font-family: "Roboto-Light", serif
 }
 
 table.nav-article-table{
@@ -1682,7 +1711,7 @@ table.nav-article-table{
 
 table.nav-article-table thead td{
 padding: 10px 14px;
-font-family: "Roboto-Regular";
+	font-family: "Roboto-Regular", serif;
 
 
 }
@@ -1715,7 +1744,6 @@ position: relative;
 }
 
 .content-products {
-	border-left: 1px solid #ebebeb;
 	padding: 0 20px 0 13px;
 	float: right;
 	width: 84%;
@@ -2338,6 +2366,7 @@ overflow: hidden;
 	bottom: 10px;
 	left: 10px;
 	cursor: pointer;
+	z-index: 101;
 }
 
 
@@ -2523,18 +2552,10 @@ width: 100%;
 
 }
 
-
-
-
 /* wrapper========================== */
 
 
 /* ***********представляемые т.марки */
-
-
-
-
-
 
 .dots {
 	height: 20px;
@@ -2551,13 +2572,14 @@ width: 100%;
 	height: calc(100% - 6px);
 	cursor: pointer;
 }
+#content h1,
+#content h2 {
+    font-family: "Roboto-Bold", serif;
+}
 
-
-
-
-
-
-
-
-
-
+.table-responsive {
+    background-color: #fff;
+}
+.table {
+    margin-bottom: 0;
+}

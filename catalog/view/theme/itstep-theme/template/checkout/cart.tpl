@@ -1,6 +1,7 @@
 <?php echo $header; ?>
 
 <div class="container">
+  <div class="row">
   <div class="way">
     <?php $last = array_pop($breadcrumbs) ?>
 
@@ -11,6 +12,7 @@
     <?php } ?>
 
     <span><a href="<?= $last['href'] ?>"><?= $last['text'] ?></a></span>
+  </div>
   </div>
 
   <?php if ($attention) { ?>

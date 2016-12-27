@@ -1,10 +1,19 @@
 <?php echo $header; ?>
 <div class="container">
-  <ul class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+  <div class="row">
+  <!-- breadcrumbs begin -->
+  <div class="way">
+    <?php foreach ($breadcrumbs as $i => $breadcrumb) { ?>
+
+    <span><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></span>
+    <? if ($i < count($breadcrumbs) - 1) { ?>
+    <i class="fa fa-angle-right" aria-hidden="true"></i>
+    <? } ?>
     <?php } ?>
-  </ul>
+  </div>
+  <!-- breadcrumbs end -->
+  </div>
+
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
@@ -16,6 +25,7 @@
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <h1><?php echo $heading_title; ?></h1>
       <?php echo $text_message; ?>
+      <div style="color: red; font-size: 3rem; text-transform: uppercase;">Это success!</div>
       <div class="buttons">
         <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
       </div>

@@ -30,7 +30,11 @@
   <link href="/catalog/view/theme/itstep-theme/bp-site-1/css/normalize.css" rel="stylesheet" />
   <link href="/catalog/view/theme/itstep-theme/bp-site-1/plugins/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
   <link href="/catalog/view/theme/itstep-theme/bp-site-1/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet" />
-  <link href="/catalog/view/theme/itstep-theme/bp-site-1/css/style.css" rel="stylesheet" />
+  <!-- Bootstrap CDN is here
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  -->
+    <link rel="stylesheet" href="/catalog/view/theme/itstep-theme/bp-site-1/plugins/bootstrap/css/bootstrap.min.css">
+    <link href="/catalog/view/theme/itstep-theme/bp-site-1/css/style.css" rel="stylesheet" />
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="/catalog/view/theme/itstep-theme/bp-site-1/plugins/owl.carousel/owl.carousel.min.js"></script>
@@ -94,8 +98,11 @@
 
   <main>
     <div class="container">
-      <nav>
+      <div class="row">
+        <nav>
         <ul id="nav" class="clearfix">
+          <?php $ids = array('technic', 'stationary', 'paper', 'notion', 'services', 'gifts'); ?>
+          <?php $i = 0; ?>
           <?php foreach ($categories as $category) { ?>
             <li>
               <a href="<?= $category['href'] ?>">
@@ -104,7 +111,7 @@
               </a>
 
               <?php if (!empty($category['childrens'])) { ?>
-                <ul class="subs">
+                <ul class="subs" id="<?= $ids[$i++] ?>">
                   <?php foreach ($category['childrens'] as $children1) { ?>
                     <li>
                       <a href="<?= $children1['href'] ?>">
@@ -134,4 +141,5 @@
           <?php } ?>
         </ul>
       </nav>
+      </div>
     </div>
