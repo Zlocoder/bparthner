@@ -112,17 +112,17 @@
           <?php if ($pages_count > 1) { ?>
             <div class="nav-pages">
               <label>
-                <a href="<?= str_replace('{page}', '1', $pagination_url) ?>"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                <a href="<?= str_replace(urlencode('{page}'), '1', $pagination_url) ?>"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
               </label>
 
               <?php for ($num = 1; $num <= $pages_count; $num++) { ?>
                 <label>
-                  <a href="<?= str_replace('{page}', $num, $pagination_url) ?>"><?= $num ?></a>
+                  <a href="<?= str_replace(urlencode('{page}'), $num, $pagination_url) ?>"><?= $num ?></a>
                 </label>
               <?php } ?>
 
               <label>
-                <a href="<?= str_replace('{page}', $pages_count, $pagination_url) ?>"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <a href="<?= str_replace(urlencode('{page}'), $pages_count, $pagination_url) ?>"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
               </label>
             </div>
           <?php } ?>
@@ -163,17 +163,17 @@
             <?php if ($pages_count > 1) { ?>
                 <div class="nav-pages">
                     <label>
-                        <a href="<?= str_replace('{page}', '1', $pagination_url) ?>"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <a href="<?= str_replace(urlencode('{page}'), '1', $pagination_url) ?>"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
                     </label>
 
                     <?php for ($num = 1; $num <= $pages_count; $num++) { ?>
                         <label>
-                            <a href="<?= str_replace('{page}', $num, $pagination_url) ?>"><?= $num ?></a>
+                            <a href="<?= str_replace(urlencode('{page}'), $num, $pagination_url) ?>"><?= $num ?></a>
                         </label>
                     <?php } ?>
 
                     <label>
-                        <a href="<?= str_replace('{page}', $pages_count, $pagination_url) ?>"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        <a href="<?= str_replace(urlencode('{page}'), $pages_count, $pagination_url) ?>"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </label>
                 </div>
             <?php } ?>
