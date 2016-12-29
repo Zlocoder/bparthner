@@ -151,7 +151,7 @@
               <div class="trade_card_description"><?= $product['description'] ?></div>
 
               <div class="container_price clearfix">
-                <div class="card_price"><?= preg_replace('/[^\d]+$/', '<sup>$0</sup>', $product['price']) ?></div>
+                <div class="card_price"><?= preg_replace('/[^\d]+$/', '<sup>$0</sup>', $product['special'] ? $product['special'] : $product['price']) ?></div>
 
                 <button type="submit">Купить</button>
               </div>
