@@ -9,6 +9,7 @@ class ControllerProductCategory extends Controller {
 
 		$this->load->model('tool/image');
 
+        // default
 		if (isset($this->request->get['filter'])) {
 			$filter = $this->request->get['filter'];
 		} else {
@@ -18,13 +19,13 @@ class ControllerProductCategory extends Controller {
 		if (isset($this->request->get['sort'])) {
 			$sort = $this->request->get['sort'];
 		} else {
-			$sort = 'p.sort_order';
+			$sort = 'p.date_modified';
 		}
 
 		if (isset($this->request->get['order'])) {
 			$order = $this->request->get['order'];
 		} else {
-			$order = 'ASC';
+			$order = 'DESC';
 		}
 
 		if (isset($this->request->get['page'])) {
@@ -49,6 +50,7 @@ class ControllerProductCategory extends Controller {
 		);
 
 		if (isset($this->request->get['path'])) {
+		    // breadcrumbs
 			$url = '';
 
 			if (isset($this->request->get['sort'])) {
@@ -92,7 +94,7 @@ class ControllerProductCategory extends Controller {
 		$category_info = $this->model_catalog_category->getCategory($category_id);
 
 		if ($category_info) {
-
+            // if in category
 			if ($category_info['meta_title']) {
 				$this->document->setTitle($category_info['meta_title']);
 			} else {
@@ -161,6 +163,7 @@ class ControllerProductCategory extends Controller {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
 
+			// subcategories
 			$data['categories'] = array();
 
 			$results = $this->model_catalog_category->getCategories($category_id);
@@ -177,7 +180,7 @@ class ControllerProductCategory extends Controller {
 				);
 			}
 
-            if (isset($this->request->get['limit'])) {
+			if (isset($this->request->get['limit'])) {
                 $limit = (int)$this->request->get['limit'];
             } else if (empty($data['categories'])) {
                 $limit = 15;
@@ -185,6 +188,7 @@ class ControllerProductCategory extends Controller {
                 $limit = 12;
             }
 
+            // products
             $data['products'] = array();
 
 			$filter_data = array(
@@ -261,50 +265,67 @@ class ControllerProductCategory extends Controller {
 
 			$data['sorts'] = array();
 
+            /*
 			$data['sorts'][] = array(
 				'text'  => $this->language->get('text_default'),
 				'value' => 'p.sort_order-ASC',
 				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=ASC' . $url)
 			);
+            */
+
+            $data['sorts'][] = array(
+                //'text'  => $this->language->get('text_name_asc'),
+                'text' => 'По новизне',
+                'value' => 'p.date_modified-DESC',
+                'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.date_modified&order=DESC' . $url)
+            );
 
 			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_name_asc'),
+				//'text'  => $this->language->get('text_name_asc'),
+                'text' => 'От А до Я',
 				'value' => 'pd.name-ASC',
 				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=ASC' . $url)
 			);
 
 			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_name_desc'),
+				//'text'  => $this->language->get('text_name_desc'),
+                'text' => 'От Я до А',
 				'value' => 'pd.name-DESC',
 				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=DESC' . $url)
 			);
 
 			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_price_asc'),
+				//'text'  => $this->language->get('text_price_asc'),
+                'text' => 'От дешевых к дорогим',
 				'value' => 'p.price-ASC',
 				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
 			);
 
 			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_price_desc'),
+				//'text'  => $this->language->get('text_price_desc'),
+				'text'  => 'От дорогих к дешевым',
 				'value' => 'p.price-DESC',
 				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
 			);
 
 			if ($this->config->get('config_review_status')) {
 				$data['sorts'][] = array(
-					'text'  => $this->language->get('text_rating_desc'),
+					//'text'  => $this->language->get('text_rating_desc'),
+					'text'  => 'По рейтингу',
 					'value' => 'rating-DESC',
 					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=DESC' . $url)
 				);
 
+                /*
 				$data['sorts'][] = array(
 					'text'  => $this->language->get('text_rating_asc'),
 					'value' => 'rating-ASC',
 					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=ASC' . $url)
 				);
+                */
 			}
 
+			/*
 			$data['sorts'][] = array(
 				'text'  => $this->language->get('text_model_asc'),
 				'value' => 'p.model-ASC',
@@ -316,6 +337,7 @@ class ControllerProductCategory extends Controller {
 				'value' => 'p.model-DESC',
 				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=DESC' . $url)
 			);
+			*/
 
 			$url = '';
 
@@ -334,11 +356,10 @@ class ControllerProductCategory extends Controller {
 			$data['limits'] = array();
 
             if (empty($data['categories'])) {
-                $limits = array(15, 25, 50, 75, 100);
+                $limits = array(15, 25, 50);
             } else {
-                $limits = array(12, 24, 48, 96);
+                $limits = array(12, 24, 48);
             }
-
 
 			sort($limits);
 
@@ -350,7 +371,16 @@ class ControllerProductCategory extends Controller {
 				);
 			}
 
-			$url = '';
+            $data['filter_form'] = array(
+                'filter' => $filter,
+                'sort' => $sort,
+                'order' => $order,
+                'limit' => $limit,
+            );
+
+            //echo '<pre>'; var_dump($data['filter_form'], $data['sorts']); echo '</pre>'; die();
+
+            $url = '';
 
 			if (isset($this->request->get['filter'])) {
 				$url .= '&filter=' . $this->request->get['filter'];
