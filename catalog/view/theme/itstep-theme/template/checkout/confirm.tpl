@@ -54,7 +54,7 @@
   </div>
   <div class="row">
     <!-- вывод подтверждения оплаты begin -->
-    <?php echo $payment; ?>
+    <?= $payment ?>
     <!-- вывод подтверждения оплаты end -->
   </div>
 </div>
