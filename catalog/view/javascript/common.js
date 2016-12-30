@@ -196,7 +196,7 @@ var cart = {
 			 }
 			 */
 			success: function(json) {
-				$('.counter-display[data-product_id=' + key + ']').text(quantity);
+				//$('.counter-display[data-product_id=' + key + ']').text(quantity);
 				$('.product-price-price').text('Итого: ' + json.total + ' грн');
 			},
 		});
@@ -207,23 +207,8 @@ var cart = {
 			type: 'post',
 			data: 'key=' + key,
 			dataType: 'json',
-			beforeSend: function() {
-				$('#cart > button').button('loading');
-			},
-			complete: function() {
-				$('#cart > button').button('reset');
-			},
 			success: function(json) {
-				// Need to set timeout otherwise it wont update the total
-				setTimeout(function () {
-					$('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
-				}, 100);
-
-				if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
-					location = 'index.php?route=checkout/cart';
-				} else {
-					$('#cart > ul').load('index.php?route=common/cart/info ul li');
-				}
+				$('.product-price-price').text('Итого: ' + json.total + ' грн');
 			},
 	        error: function(xhr, ajaxOptions, thrownError) {
 	            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);

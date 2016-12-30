@@ -58,9 +58,9 @@
 
               <td>
                 <div class="product-counter">
-                  <div class="counter-"><img src="/catalog/view/theme/itstep-theme/bp-site-1/img/minus.png" alt="-"></div>
+                  <div class="counter-" data-product_id="<?= $product['cart_id'] ?>"><img src="/catalog/view/theme/itstep-theme/bp-site-1/img/minus.png" alt="-"></div>
                   <div class="counter-display"><?php echo $product['quantity']; ?></div>
-                  <div class="counter-plus"><img src="/catalog/view/theme/itstep-theme/bp-site-1/img/plus.png" alt="+"></div>
+                  <div class="counter-plus" data-product_id="<?= $product['cart_id'] ?>"><img src="/catalog/view/theme/itstep-theme/bp-site-1/img/plus.png" alt="+"></div>
                 </div>
               </td>
 
@@ -78,7 +78,7 @@
               -->
 
               <td class="cart-product_price"><?= $product['price'] ?></td>
-              <td class="close"><span class="delete_product"><i class="fa fa-times" aria-hidden="true"></i></span></td>
+              <td class="close"><span class="delete_product" data-product_id="<?= $product['cart_id'] ?>"><i class="fa fa-times" aria-hidden="true"></i></span></td>
             </tr>
           <?php } ?>
         </tbody>
@@ -106,12 +106,25 @@
 
 <script>
     $(function() {
-        $('.product-counter .btn').click(function() {
+        $('.product-counter div').not('.counter-display').click(function() {
             var product_id = $(this).data('product_id');
             var quantity = parseInt($(this).siblings('.counter-display').text()) + ($(this).is('.counter-plus') ? 1 : -1);
-
+            $(this).siblings('.counter-display').text(quantity);
             cart.update(product_id, quantity)
-        })
+        });
+
+        $('.delete_product').click(function() {
+            cart.remove($(this).data('product_id'));
+            if ($(this).parents('tbody').children().length > 1) {
+              $(this).parents('tr').remove();
+            } else {
+              $(this).parents('form').remove();
+              $('.product-price-price').remove();
+              $('.cart-button_container a:last').remove();
+              $('.cart-container').append($('<p>В корзине пусто</p>'));
+            }
+
+        });
     });
 </script>
 
