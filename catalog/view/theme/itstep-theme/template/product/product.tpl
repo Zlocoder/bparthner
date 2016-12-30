@@ -134,7 +134,7 @@
                         <div class="container_price clearfix">
                             <div class="card_price"><?= $product['price'] ?></div>
 
-                            <button type="submit">Купить</button>
+                            <button type="submit" onclick="cart.add(<?= $product['product_id'] ?>)">Купить</button>
                         </div>
                     </div>
                 <?php } ?>
