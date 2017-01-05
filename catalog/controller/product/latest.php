@@ -1,25 +1,23 @@
 <?php
 
 class ControllerProductLatest extends Controller {
+
   public function index() {
 
+    /* загрузка модели */
     $this->load->language('product/latest');
-
-    $data['heading_title'] = $this->language->get('heading_title');
-
-    $data['text_tax'] = $this->language->get('text_tax');
-
-    $data['button_cart'] = $this->language->get('button_cart');
-    $data['button_wishlist'] = $this->language->get('button_wishlist');
-    $data['button_compare'] = $this->language->get('button_compare');
-
     $this->load->model('catalog/product');
     $this->load->model('tool/image');
 
-    $data['products'] = array();
-
+    /* загрузка локализации */
+    $data['heading_title'] = $this->language->get('heading_title');
+    $data['text_tax'] = $this->language->get('text_tax');
+    $data['button_cart'] = $this->language->get('button_cart');
+    $data['button_wishlist'] = $this->language->get('button_wishlist');
+    $data['button_compare'] = $this->language->get('button_compare');
     $data['heading_title'] = $this->language->get('heading_title');
 
+    /* организация "хлебных крошек" */
     $data['breadcrumbs'] = array();
     $data['breadcrumbs'][] = array(
         'text' => $this->language->get('text_home'),
@@ -30,6 +28,7 @@ class ControllerProductLatest extends Controller {
         'href' => $this->url->link('product/latest')
     );
 
+    /* загрузка модулей страницы, в т.ч. хедера и футера */
     $data['column_left'] = $this->load->controller('common/column_left');
     $data['column_right'] = $this->load->controller('common/column_right');
     $data['content_top'] = $this->load->controller('common/content_top');
@@ -44,6 +43,7 @@ class ControllerProductLatest extends Controller {
         'limit' => 0
     );
 
+    $data['products'] = array();
     $results = $this->model_catalog_product->getProducts($filter_data);
 
     if ($results) {
@@ -97,8 +97,10 @@ class ControllerProductLatest extends Controller {
 //      var_dump(DIR_TEMPLATE . $this->config->get('config_template') . '/template/product/latest.tpl');
 //      echo '</pre>';
 
+      /* загрузка вьюхи, вот только отчего-то она не грузится */
       if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/product/latest.tpl')) {
-        return $this->load->view($this->config->get('config_template') . '/template/product/latest.tpl', $data);
+        $tmp = $this->load->view($this->config->get('config_template') . '/template/product/latest.tpl', $data);
+        return $tmp;
       } else {
         return $this->load->view('default/template/module/latest.tpl', $data);
       }

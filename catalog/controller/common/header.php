@@ -4,7 +4,7 @@ class ControllerCommonHeader extends Controller {
 		// Analytics
 		$this->load->model('extension/extension');
 
-        $data['customer'] = $this->customer;
+    $data['customer'] = $this->customer;
 		$data['analytics'] = array();
 
 		$analytics = $this->model_extension_extension->getExtensions('analytics');
@@ -15,13 +15,13 @@ class ControllerCommonHeader extends Controller {
 			}
 		}
 
-        if ($this->request->server['HTTPS']) {
-            $server = $this->config->get('config_ssl');
-        } else {
-            $server = $this->config->get('config_url');
-        }
+    if ($this->request->server['HTTPS']) {
+        $server = $this->config->get('config_ssl');
+    } else {
+        $server = $this->config->get('config_url');
+    }
 
-        if (is_file(DIR_IMAGE . $this->config->get('config_icon'))) {
+    if (is_file(DIR_IMAGE . $this->config->get('config_icon'))) {
 			$this->document->addLink($server . 'image/' . $this->config->get('config_icon'), 'icon');
 		}
 
@@ -68,17 +68,17 @@ class ControllerCommonHeader extends Controller {
 		$data['shopping_cart'] = $this->url->link('checkout/cart');
 		$data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
 
-        $data['home'] = $this->url->link('common/home');
+    $data['home'] = $this->url->link('common/home');
 
-        // top menu links
-        $data['about'] = $this->url->link('information/information', 'information_id=4', 'SSL');
-        $data['blog'] = $this->url->link('blog/home');
-        $data['delivery'] = $this->url->link('information/information', 'information_id=6', 'SSL');
-        $data['discount'] = $this->url->link('information/information', 'information_id=3', 'SSL');
-        $data['contact'] = $this->url->link('information/contact');
-        $data['login'] = $this->url->link('account/login', '', 'SSL');
-        $data['logout'] = $this->url->link('account/logout', '', 'SSL');
-        $data['account'] = $this->url->link('account/account', '', 'SSL');
+    // top menu links
+    $data['about'] = $this->url->link('information/information', 'information_id=4', 'SSL');
+    $data['blog'] = $this->url->link('blog/home');
+    $data['delivery'] = $this->url->link('information/information', 'information_id=6', 'SSL');
+    $data['discount'] = $this->url->link('information/information', 'information_id=3', 'SSL');
+    $data['contact'] = $this->url->link('information/contact');
+    $data['login'] = $this->url->link('account/login', '', 'SSL');
+    $data['logout'] = $this->url->link('account/logout', '', 'SSL');
+    $data['account'] = $this->url->link('account/account', '', 'SSL');
 
 		$data['telephone'] = $this->config->get('config_telephone');
 

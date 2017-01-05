@@ -1,5 +1,8 @@
 <?php
 
+//  phpinfo();
+//  die();
+
 // Version
 define('VERSION', '2.1.0.2.1'); /* Fix version 02.04.2016 */
 
