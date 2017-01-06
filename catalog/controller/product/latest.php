@@ -98,11 +98,15 @@ class ControllerProductLatest extends Controller {
 //      echo '</pre>';
 
       /* загрузка вьюхи, вот только отчего-то она не грузится */
-      if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/product/latest.tpl')) {
-        $tmp = $this->load->view($this->config->get('config_template') . '/template/product/latest.tpl', $data);
-        return $tmp;
+      $view_path = $this->config->get('config_template') . '/template/product/latest.tpl';
+      $default_view_path = 'default/template/module/latest.tpl';
+      if (file_exists(DIR_TEMPLATE . $view_path)) {
+        $tmp = $this->load->view($view_path, $data);
+        $this->response->setOutput($tmp);
+//        return $tmp;
       } else {
-        return $this->load->view('default/template/module/latest.tpl', $data);
+//        return $this->load->view('default/template/module/latest.tpl', $data);
+        $this->response->setOutput($default_view_path, $data);
       }
     }
   }

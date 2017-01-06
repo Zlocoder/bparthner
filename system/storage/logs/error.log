@@ -5701,3 +5701,175 @@
 2017-01-05 14:47:31 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_cart WHERE customer_id = '0' AND session_id = 'gcsi34fqk57s6baicsn7sq6j92' in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
 2017-01-05 14:47:31 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\system\library\cart.php on line 37
 2017-01-05 14:47:31 - PHP Warning:  Invalid argument supplied for foreach() in E:\OpenServer\domains\localhost\system\library\cart.php on line 37
+2017-01-06 1:27:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 1:27:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 1:27:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 1:27:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 1:27:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 1:27:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 1:27:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 1:27:02 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:29:43 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:29:43 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:29:43 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:29:43 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:29:43 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:29:43 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:29:43 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:29:43 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:44:29 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:44:29 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:44:29 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:44:29 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:44:29 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:44:29 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:44:29 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:44:29 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:44:33 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:44:33 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:44:33 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:44:33 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:44:47 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:44:47 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:44:47 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:44:47 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:44:47 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 2:44:47 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:44:47 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:44:47 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 2:44:47 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:04:23 - PHP Warning:  mysqli::query(): MySQL server has gone away in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 19
+2017-01-06 3:04:23 - PHP Warning:  mysqli::query(): Error reading result set's header in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 19
+2017-01-06 3:04:23 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_layout_route WHERE 'product/search' LIKE route AND store_id = '0' ORDER BY route DESC LIMIT 1 in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:23 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\catalog\model\design\layout.php on line 6
+2017-01-06 3:04:23 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_layout_module WHERE layout_id = '4' AND position = 'column_left' ORDER BY sort_order in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:23 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\catalog\model\design\layout.php on line 16
+2017-01-06 3:04:23 - PHP Warning:  Invalid argument supplied for foreach() in E:\OpenServer\domains\localhost\catalog\controller\common\column_left.php on line 48
+2017-01-06 3:04:25 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_layout_route WHERE 'product/search' LIKE route AND store_id = '0' ORDER BY route DESC LIMIT 1 in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:25 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\catalog\model\design\layout.php on line 6
+2017-01-06 3:04:25 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_layout_module WHERE layout_id = '4' AND position = 'column_right' ORDER BY sort_order in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:25 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\catalog\model\design\layout.php on line 16
+2017-01-06 3:04:25 - PHP Warning:  Invalid argument supplied for foreach() in E:\OpenServer\domains\localhost\catalog\controller\common\column_right.php on line 48
+2017-01-06 3:04:26 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_layout_route WHERE 'product/search' LIKE route AND store_id = '0' ORDER BY route DESC LIMIT 1 in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:26 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\catalog\model\design\layout.php on line 6
+2017-01-06 3:04:26 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_layout_module WHERE layout_id = '4' AND position = 'content_top' ORDER BY sort_order in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:26 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\catalog\model\design\layout.php on line 16
+2017-01-06 3:04:26 - PHP Warning:  Invalid argument supplied for foreach() in E:\OpenServer\domains\localhost\catalog\controller\common\content_top.php on line 48
+2017-01-06 3:04:27 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_layout_route WHERE 'product/search' LIKE route AND store_id = '0' ORDER BY route DESC LIMIT 1 in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:27 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\catalog\model\design\layout.php on line 6
+2017-01-06 3:04:27 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_layout_module WHERE layout_id = '4' AND position = 'content_bottom' ORDER BY sort_order in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:27 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\catalog\model\design\layout.php on line 16
+2017-01-06 3:04:27 - PHP Warning:  Invalid argument supplied for foreach() in E:\OpenServer\domains\localhost\catalog\controller\common\content_bottom.php on line 48
+2017-01-06 3:04:30 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_extension WHERE `type` = 'analytics' in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:30 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\catalog\model\extension\extension.php on line 6
+2017-01-06 3:04:30 - PHP Warning:  Invalid argument supplied for foreach() in E:\OpenServer\domains\localhost\catalog\controller\common\header.php on line 12
+2017-01-06 3:04:30 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_category c LEFT JOIN oc_category_description cd ON (c.category_id = cd.category_id) LEFT JOIN oc_category_to_store c2s ON (c.category_id = c2s.category_id) WHERE c.parent_id = '0' AND cd.language_id = '1' AND c2s.store_id = '0'  AND c.status = '1' ORDER BY c.sort_order, LCASE(cd.name) in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:30 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\catalog\model\catalog\category.php on line 12
+2017-01-06 3:04:30 - PHP Warning:  Invalid argument supplied for foreach() in E:\OpenServer\domains\localhost\catalog\controller\common\header.php on line 139
+2017-01-06 3:04:30 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_cart WHERE customer_id = '0' AND session_id = '5ac001ndr2g67u9r2kjdqefps6' in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:30 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\system\library\cart.php on line 37
+2017-01-06 3:04:30 - PHP Warning:  Invalid argument supplied for foreach() in E:\OpenServer\domains\localhost\system\library\cart.php on line 37
+2017-01-06 3:04:30 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_cart WHERE customer_id = '0' AND session_id = '5ac001ndr2g67u9r2kjdqefps6' in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:30 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\system\library\cart.php on line 37
+2017-01-06 3:04:30 - PHP Warning:  Invalid argument supplied for foreach() in E:\OpenServer\domains\localhost\system\library\cart.php on line 37
+2017-01-06 3:04:30 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_cart WHERE customer_id = '0' AND session_id = '5ac001ndr2g67u9r2kjdqefps6' in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 41
+2017-01-06 3:04:30 - PHP Notice:  Trying to get property of non-object in E:\OpenServer\domains\localhost\system\library\cart.php on line 37
+2017-01-06 3:04:30 - PHP Warning:  Invalid argument supplied for foreach() in E:\OpenServer\domains\localhost\system\library\cart.php on line 37
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:06:26 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:07:57 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:07:57 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:07:57 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:07:57 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:07:57 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:07:57 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:07:57 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:07:57 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:07:57 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:08:54 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in E:\OpenServer\domains\localhost\system\library\db\mysqli.php on line 59
+2017-01-06 3:28:41 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:41 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:41 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:41 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:41 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:41 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:28:41 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:28:41 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:28:41 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:28:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:28:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:28:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:28:44 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:28:58 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:58 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:58 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:58 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:58 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:28:58 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:28:58 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:28:58 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:28:58 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:35:56 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:35:56 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:35:56 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:35:56 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:35:56 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:35:56 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:35:56 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:35:56 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:35:56 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:36:37 - PHP Notice:  Undefined variable: pagination in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\latest.tpl on line 63
+2017-01-06 3:36:37 - PHP Notice:  Undefined variable: results in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\latest.tpl on line 64
+2017-01-06 3:43:02 - PHP Notice:  Undefined variable: pagination in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\latest.tpl on line 63
+2017-01-06 3:43:02 - PHP Notice:  Undefined variable: results in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\latest.tpl on line 64
+2017-01-06 3:43:17 - PHP Notice:  Undefined variable: pagination in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\latest.tpl on line 63
+2017-01-06 3:43:17 - PHP Notice:  Undefined variable: results in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\latest.tpl on line 64
+2017-01-06 3:44:17 - PHP Notice:  Undefined variable: class in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\latest.tpl on line 17
+2017-01-06 3:44:17 - PHP Notice:  Undefined variable: pagination in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\latest.tpl on line 53
+2017-01-06 3:44:17 - PHP Notice:  Undefined variable: results in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\latest.tpl on line 54
+2017-01-06 3:44:34 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:44:34 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:44:34 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:44:34 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:44:34 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\special.tpl on line 15
+2017-01-06 3:44:34 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:44:34 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:44:34 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:44:34 - PHP Notice:  Undefined index: new in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\module\viewed.tpl on line 15
+2017-01-06 3:44:37 - PHP Notice:  Undefined variable: class in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\latest.tpl on line 17
+2017-01-06 3:44:37 - PHP Notice:  Undefined variable: pagination in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\latest.tpl on line 53
+2017-01-06 3:44:37 - PHP Notice:  Undefined variable: results in E:\OpenServer\domains\localhost\catalog\view\theme\itstep-theme\template\product\latest.tpl on line 54
