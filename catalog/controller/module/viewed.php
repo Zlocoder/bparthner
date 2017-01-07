@@ -17,20 +17,20 @@ class ControllerModuleViewed extends Controller {
 
 		$data['products'] = array();
 
-        $products = array();
+    $products = array();
 
-        if (isset($this->request->cookie['viewed'])) {
-            $products = explode(',', $this->request->cookie['viewed']);
-        } else if (isset($this->session->data['viewed'])) {
-            $products = $this->session->data['viewed'];
-        }
+    if (isset($this->request->cookie['viewed'])) {
+        $products = explode(',', $this->request->cookie['viewed']);
+    } else if (isset($this->session->data['viewed'])) {
+        $products = $this->session->data['viewed'];
+    }
 
-        if (isset($this->request->get['route']) && $this->request->get['route'] == 'product/product') {
-            $product_id = $this->request->get['product_id'];
-            $products = array_diff($products, array($product_id));
-            array_unshift($products, $product_id);
-            setcookie('viewed', implode(',',$products), time() + 60 * 60 * 24 * 30, '/', $this->request->server['HTTP_HOST']);
-        }
+    if (isset($this->request->get['route']) && $this->request->get['route'] == 'product/product') {
+        $product_id = $this->request->get['product_id'];
+        $products = array_diff($products, array($product_id));
+        array_unshift($products, $product_id);
+        setcookie('viewed', implode(',',$products), time() + 60 * 60 * 24 * 30, '/', $this->request->server['HTTP_HOST']);
+    }
 
 		if (empty($setting['limit'])) {
 			$setting['limit'] = 4;
@@ -85,6 +85,8 @@ class ControllerModuleViewed extends Controller {
 				);
 			}
 		}
+
+    $data['viewed'] = $this->url->link('product/viewed');
 
 		if ($data['products']) {
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/viewed.tpl')) {

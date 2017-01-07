@@ -1,5 +1,5 @@
 <div class="main_links">
-  <a href="#">Товары со скидкой</a>
+  <a href="<?= $special ?>">Товары со скидкой</a>
 </div>
 
 <div class="products specials products-5n clearfix">

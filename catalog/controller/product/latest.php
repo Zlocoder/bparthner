@@ -4,6 +4,10 @@ class ControllerProductLatest extends Controller {
 
   public function index() {
 
+    /* пути к модулям вьюх*/
+    $view_path = $this->config->get('config_template') . '/template/product/latest.tpl';
+    $default_view_path = 'default/template/module/latest.tpl';
+
     /* загрузка модели */
     $this->load->language('product/latest');
     $this->load->model('catalog/product');
@@ -91,21 +95,9 @@ class ControllerProductLatest extends Controller {
         );
       }
 
-//      echo '<pre>';
-//      var_dump(DIR_TEMPLATE);
-//      var_dump($this->config->get('config_template'));
-//      var_dump(DIR_TEMPLATE . $this->config->get('config_template') . '/template/product/latest.tpl');
-//      echo '</pre>';
-
-      /* загрузка вьюхи, вот только отчего-то она не грузится */
-      $view_path = $this->config->get('config_template') . '/template/product/latest.tpl';
-      $default_view_path = 'default/template/module/latest.tpl';
       if (file_exists(DIR_TEMPLATE . $view_path)) {
-        $tmp = $this->load->view($view_path, $data);
-        $this->response->setOutput($tmp);
-//        return $tmp;
+        $this->response->setOutput($this->load->view($view_path, $data));
       } else {
-//        return $this->load->view('default/template/module/latest.tpl', $data);
         $this->response->setOutput($default_view_path, $data);
       }
     }

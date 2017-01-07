@@ -1,3 +1,6 @@
+<?php die('test'); ?>
+
+
 <?php echo $header; ?>
 <div class="container">
   <ul class="breadcrumb">
