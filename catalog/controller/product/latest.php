@@ -98,7 +98,7 @@ class ControllerProductLatest extends Controller {
       if (file_exists(DIR_TEMPLATE . $view_path)) {
         $this->response->setOutput($this->load->view($view_path, $data));
       } else {
-        $this->response->setOutput($default_view_path, $data);
+        $this->response->setOutput($this->load->view($default_view_path, $data));
       }
     }
   }

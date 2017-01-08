@@ -71,7 +71,7 @@ class ControllerModuleSpecial extends Controller {
 				);
 			}
 
-      $data['special'] = $this->url->link('product/discounts');
+      $data['special'] = $this->url->link('product/special');
 
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/special.tpl')) {
 				return $this->load->view($this->config->get('config_template') . '/template/module/special.tpl', $data);
