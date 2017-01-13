@@ -71,9 +71,9 @@
     </div>
     <?php echo $column_right; ?></div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#button-search').bind('click', function() {
-	url = 'index.php?route=product/search';
+	var url = 'index.php?route=product/search';
 
 	var search = $('#content input[name=\'search\']').prop('value');
 
@@ -118,5 +118,5 @@ $('select[name=\'category_id\']').on('change', function() {
 });
 
 $('select[name=\'category_id\']').trigger('change');
---></script>
+</script>
 <?php echo $footer; ?>

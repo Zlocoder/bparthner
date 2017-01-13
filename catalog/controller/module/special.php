@@ -21,7 +21,7 @@ class ControllerModuleSpecial extends Controller {
 			'sort'  => 'pd.name',
 			'order' => 'ASC',
 			'start' => 0,
-			'limit' => $setting['limit']
+			'limit' => 0
 		);
 
 		$results = $this->model_catalog_product->getProductSpecials($filter_data);
@@ -70,6 +70,8 @@ class ControllerModuleSpecial extends Controller {
 					'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
 				);
 			}
+
+      $data['special'] = $this->url->link('product/special');
 
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/special.tpl')) {
 				return $this->load->view($this->config->get('config_template') . '/template/module/special.tpl', $data);

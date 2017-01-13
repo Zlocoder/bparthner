@@ -71,6 +71,8 @@ class ControllerModuleLatest extends Controller {
 				);
 			}
 
+      $data['latest'] = $this->url->link('product/latest');
+
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/latest.tpl')) {
 				return $this->load->view($this->config->get('config_template') . '/template/module/latest.tpl', $data);
 			} else {

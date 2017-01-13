@@ -1,5 +1,5 @@
 <div class="main_links">
-  <a href="#">Новинки</a>
+  <a href="<?= $latest ?>">Новинки</a>
 </div>
 
 <div class="products latests products-5n clearfix">

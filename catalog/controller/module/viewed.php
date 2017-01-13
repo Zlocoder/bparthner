@@ -86,6 +86,8 @@ class ControllerModuleViewed extends Controller {
 			}
 		}
 
+    $data['viewed'] = $this->url->link('product/viewed');
+
 		if ($data['products']) {
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/viewed.tpl')) {
 				return $this->load->view($this->config->get('config_template') . '/template/module/viewed.tpl', $data);

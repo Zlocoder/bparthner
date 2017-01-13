@@ -1,5 +1,5 @@
 <div class="main_links">
-    <a href="#">Просмотренные</a>
+    <a href="<?= $viewed ?>">Просмотренные</a>
 </div>
 
 <div class="products viewed products-5n clearfix">
