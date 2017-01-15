@@ -13,6 +13,78 @@
         </div>
         <!-- breadcrumbs end -->
     </div>
+
+    <div class="filters">
+        <form id="filter">
+            <div class="line" style="text-align: center; display: none;">
+                <div class="select-container">
+                    <select id="filter_order" name="sort">
+                        <?php foreach ($sorts as $sort) { ?>
+                        <?php if ("{$filter_form['sort']}-{$filter_form['order']}" == $sort['value']) { ?>
+                        <option value="<?= $sort['value'] ?>" data-url="<?= $sort['href'] ?>" selected><?= $sort['text'] ?></option>
+                        <?php }  else { ?>
+                        <option value="<?= $sort['value'] ?>" data-url="<?= $sort['href'] ?>"><?= $sort['text'] ?></option>
+                        <?php } ?>
+                        <?php } ?>
+                    </select>
+                </div>
+
+                <!--<div class="select-container-big">
+                    от <span class="min-price">57</span>
+                    <input type="range" name="price" min="0" max="10000" step="1"> <span class="max-price">10000</span> грн.
+                    <input type="submit" value="OK">
+                </div>-->
+
+                <div class="paygering">
+                    <span>Показывать по</span>
+                    <?php foreach ($limits as $limit) { ?>
+                    <label><input type="submit" name="limit" data-url="<?= $limit['href'] ?>" value="<?= $limit['value'] ?>"/></label>
+                    <?php } ?>
+                </div>
+            </div>
+
+            <div class="line">
+                <a class="command" id="slideUp" style="display: none;"> Сортировать ▲</a>
+                <a class="command" id="slideDown" style="display: inline-block;"> Сортировать ▼</a>
+            </div>
+
+            <script type="text/javascript">
+                $(function () {
+                    $('#filter_order').change(function() {
+                        var $select = $(this);
+                        var url = '';
+                        $('option', this).each(function() {
+                            var $option = $(this);
+                            if ($option.attr('value') == $select.val()) {
+                                url = $option.data('url');
+                            }
+                        });
+
+                        document.location = url;
+                    });
+
+                    $('#filter .paygering input').click(function(e) {
+                        e.preventDefault();
+
+                        document.location = $(this).data('url');
+                    });
+
+                    $('#slideDown').on('click', function (e) {
+                        $('#filter .line').not(':last').slideDown();
+                        $('#slideDown').hide();
+                        $('#slideUp').show();
+                    });
+
+                    $('#slideUp').on('click', function (e) {
+                        $('#filter .line').not(':last').slideUp();
+                        $('#slideUp').hide();
+                        $('#slideDown').show();
+                    })
+                });
+            </script>
+        </form>
+    </div>
+
     <div class="row">
         <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
             <h1><?php echo $heading_title; ?></h1>

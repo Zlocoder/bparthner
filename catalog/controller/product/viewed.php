@@ -2,6 +2,24 @@
 
   class ControllerProductViewed extends Controller {
 
+    /*
+     * Конструктор URL
+     * добавляет get-параметры
+     * @param $params array названия параметров
+     * @return string
+     */
+    private function getURL($params) {
+      $url = '';
+
+      foreach ($params as $param) {
+        if (isset($this->request->get[$param])) {
+          $url .= '&' . $param . '=' . $this->request->get[$param];
+        }
+      }
+
+      return $url;
+    }
+
     public function index() {
 
       /* пути к модулям вьюх*/
@@ -39,6 +57,103 @@
       $data['footer'] = $this->load->controller('common/footer');
       $data['header'] = $this->load->controller('common/header');
 
+      /* Фильтры */
+      if (isset($this->request->get['filter'])) {
+        $filter = $this->request->get['filter'];
+      } else {
+        $filter = '';
+      }
+
+      if (isset($this->request->get['sort'])) {
+        $sort = $this->request->get['sort'];
+      } else {
+        $sort = 'p.date_modified';
+      }
+
+      if (isset($this->request->get['order'])) {
+        $order = $this->request->get['order'];
+      } else {
+        $order = 'DESC';
+      }
+
+      $url = $this->getURL(array('filter', 'sort', 'order', 'limit'));
+
+      if (isset($this->request->get['limit'])) {
+        $limit = (int)$this->request->get['limit'];
+      } else if (empty($data['categories'])) {
+        $limit = 15;
+      } else {
+        $limit = 12;
+      }
+
+      $data['sorts'][] = array(
+        //'text'  => $this->language->get('text_name_asc'),
+          'text' => 'По новизне',
+          'value' => 'p.date_modified-DESC',
+          'href'  => $this->url->link('product/viewed', '&sort=p.date_modified&order=DESC' . $url)
+      );
+
+      $data['sorts'][] = array(
+        //'text'  => $this->language->get('text_name_asc')
+          'text' => 'От А до Я',
+          'value' => 'pd.name-ASC',
+          'href'  => $this->url->link('product/viewed', '&sort=pd.name&order=ASC' . $url)
+      );
+
+      $data['sorts'][] = array(
+        //'text'  => $this->language->get('text_name_desc'),
+          'text' => 'От Я до А',
+          'value' => 'pd.name-DESC',
+          'href'  => $this->url->link('product/viewed', '&sort=pd.name&order=DESC' . $url)
+      );
+
+      $data['sorts'][] = array(
+        //'text'  => $this->language->get('text_price_asc'),
+          'text' => 'От дешевых к дорогим',
+          'value' => 'p.price-ASC',
+          'href'  => $this->url->link('product/viewed', '&sort=p.price&order=ASC' . $url)
+      );
+
+      $data['sorts'][] = array(
+        //'text'  => $this->language->get('text_price_desc'),
+          'text'  => 'От дорогих к дешевым',
+          'value' => 'p.price-DESC',
+          'href'  => $this->url->link('product/viewed', '&sort=p.price&order=DESC' . $url)
+      );
+
+      if ($this->config->get('config_review_status')) {
+        $data['sorts'][] = [
+          //'text'  => $this->language->get('text_rating_desc'),
+            'text'  => 'По рейтингу',
+            'value' => 'rating-DESC',
+            'href'  => $this->url->link('product/viewed', '&sort=rating&order=DESC' . $url)
+        ];
+      }
+
+      $data['limits'] = array();
+
+      if (empty($data['categories'])) {
+        $limits = array(15, 25, 50);
+      } else {
+        $limits = array(12, 24, 48);
+      }
+
+      sort($limits);
+
+      foreach($limits as $value) {
+        $data['limits'][] = array(
+            'text'  => $value,
+            'value' => $value,
+            'href'  => $this->url->link('product/viewed', $url . '&limit=' . $value)
+        );
+      }
+
+      $data['filter_form'] = array(
+          'filter' => $filter,
+          'sort' => $sort,
+          'order' => $order,
+          'limit' => $limit,
+      );
 
       $products = array();
 
