@@ -61,9 +61,8 @@
         $product_info = $this->model_catalog_product->getProduct($product_id);
 
         if ($product_info) {
-//          todo: исправить размеры картинок по умолчанию, тут заглушка в размер 100х100
           if ($product_info['image']) {
-            $image = $this->model_tool_image->resize($product_info['image'], 100, 100);
+            $image = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
           } else {
             $image = $this->model_tool_image->resize('placeholder.png', 100, 100);
           }
