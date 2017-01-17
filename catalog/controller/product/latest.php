@@ -32,6 +32,9 @@ class ControllerProductLatest extends Controller {
         'href' => $this->url->link('product/latest')
     );
 
+    $this->document->setTitle('Новые товары');
+    $this->document->setDescription('Новые товары');
+
     /* загрузка модулей страницы, в т.ч. хедера и футера */
     $data['column_left'] = $this->load->controller('common/column_left');
     $data['column_right'] = $this->load->controller('common/column_right');
@@ -40,14 +43,27 @@ class ControllerProductLatest extends Controller {
     $data['footer'] = $this->load->controller('common/footer');
     $data['header'] = $this->load->controller('common/header');
 
+    if (isset($this->request->get['limit'])) {
+        $limit = (int)$this->request->get['limit'];
+    } else {
+        $limit = 15;
+    }
+
+    if (isset($this->request->get['page'])) {
+        $page = $this->request->get['page'];
+    } else {
+        $page = 1;
+    }
+
     $filter_data = array(
-        'sort'  => 'p.date_added',
-        'order' => 'DESC',
-        'start' => 0,
-        'limit' => 0
+      'sort'  => 'p.date_added',
+      'order' => 'DESC',
+      'start' => $limit * ($page - 1),
+      'limit' => $limit
     );
 
     $data['products'] = array();
+    $product_total = $this->model_catalog_product->getTotalProducts($filter_data);
     $results = $this->model_catalog_product->getProducts($filter_data);
 
     if ($results) {
@@ -94,6 +110,16 @@ class ControllerProductLatest extends Controller {
             'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
         );
       }
+
+      $url = '';
+
+      if (isset($this->request->get['limit'])) {
+        $url .= '&limit=' . $this->request->get['limit'];
+      }
+
+      $data['pages_count'] = ceil($product_total / $limit);
+      $data['current_page'] = $page;
+      $data['pagination_url'] = $this->url->link('product/latest', $url . '&page={page}');
 
       if (file_exists(DIR_TEMPLATE . $view_path)) {
         $this->response->setOutput($this->load->view($view_path, $data));

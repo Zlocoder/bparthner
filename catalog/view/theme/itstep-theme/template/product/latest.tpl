@@ -17,52 +17,82 @@
         <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
             <h1><?php echo $heading_title; ?></h1>
             <?php if ($products) { ?>
+                <!-- пагинация begin -->
+                <div class="nav-pages">
+                    <?php if ($pages_count > 1) { ?>
+                    <div class="nav-pages">
+                        <label>
+                            <a href="<?= str_replace('{page}', '1', $pagination_url) ?>"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        </label>
 
-            <!-- выдача товаров begin -->
+                        <?php for ($num = 1; $num <= $pages_count; $num++) { ?>
+                        <label>
+                            <a href="<?= str_replace('{page}', $num, $pagination_url) ?>"><?= $num ?></a>
+                        </label>
+                        <?php } ?>
 
-            <div class="products products-5n">
-                <?php foreach ($products as $product) { ?>
-                <div class="trade_card">
-                    <?php if ($product['special'] && ($product['price'] - $product['special']) > 0) { ?>
-                    <div class="container2">
-                        <div class="quality2">-<?= 100 - round($product['special'] * 100 / $product['price']) ?>%</div>
-                        <img src="/catalog/view/theme/itstep-theme/bp-site-1/img/sale.png" alt=" ">
+                        <label>
+                            <a href="<?= str_replace('{page}', $pages_count, $pagination_url) ?>"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </label>
                     </div>
                     <?php } ?>
-
-                    <div class="trade_card_img"><img src="<?= $product['thumb'] ?>" alt="Sony VAIO" title="Sony VAIO"></div>
-
-                    <div class="title_trade_card"><a href="index_tradecard.html"><?= $product['name'] ?></a></div>
-                    <div class="trade_card_description"><?= $product['description'] ?></div>
-
-                    <div class="container_price clearfix">
-                        <div class="card_price"><?= preg_replace('/[^\d]+$/', '<sup>$0</sup>', $product['special'] ? $product['special'] : $product['price']) ?></div>
-
-                        <button type="submit">Купить</button>
-                    </div>
                 </div>
-                <?php } ?>
-            </div>
+                <!-- пагинация end -->
 
-            <!-- выдача товаров end -->
+                <!-- выдача товаров begin -->
+                <div class="products products-5n">
+                    <?php foreach ($products as $product) { ?>
+                    <div class="trade_card">
+                        <?php if ($product['special'] && ($product['price'] - $product['special']) > 0) { ?>
+                        <div class="container2">
+                            <div class="quality2">-<?= 100 - round($product['special'] * 100 / $product['price']) ?>%</div>
+                            <img src="/catalog/view/theme/itstep-theme/bp-site-1/img/sale.png" alt=" ">
+                        </div>
+                        <?php } ?>
 
-            <!-- TODO: добавить стилизацию пагинации -->
-            <!-- пагинация begin -->
-            <!--
-            <div class="row">
-                <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
-                <div class="col-sm-6 text-right"><?php echo $results; ?></div>
-            </div>
-            -->
-            <!-- пагинация end -->
+                        <div class="trade_card_img"><img src="<?= $product['thumb'] ?>" alt="Sony VAIO" title="Sony VAIO"></div>
 
+                        <div class="title_trade_card"><a href="index_tradecard.html"><?= $product['name'] ?></a></div>
+                        <div class="trade_card_description"><?= $product['description'] ?></div>
+
+                        <div class="container_price clearfix">
+                            <div class="card_price"><?= preg_replace('/[^\d]+$/', '<sup>$0</sup>', $product['special'] ? $product['special'] : $product['price']) ?></div>
+
+                            <button type="submit">Купить</button>
+                        </div>
+                    </div>
+                    <?php } ?>
+                </div>
+                <!-- выдача товаров end -->
+
+                <!-- пагинация begin -->
+                <div class="nav-pages">
+                    <?php if ($pages_count > 1) { ?>
+                    <div class="nav-pages">
+                        <label>
+                            <a href="<?= str_replace('{page}', '1', $pagination_url) ?>"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        </label>
+
+                        <?php for ($num = 1; $num <= $pages_count; $num++) { ?>
+                        <label>
+                            <a href="<?= str_replace('{page}', $num, $pagination_url) ?>"><?= $num ?></a>
+                        </label>
+                        <?php } ?>
+
+                        <label>
+                            <a href="<?= str_replace('{page}', $pages_count, $pagination_url) ?>"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </label>
+                    </div>
+                    <?php } ?>
+                </div>
+                <!-- пагинация end -->
             <?php } else { ?>
-
-            <p><?php echo $text_empty; ?></p>
+                <p><?php echo $text_empty; ?></p>
             <?php } ?>
-            <?php echo $content_bottom; ?>
 
+            <?php echo $content_bottom; ?>
         </div>
+
         <?php echo $column_right; ?></div>
 </div>
 <?php echo $footer; ?>
