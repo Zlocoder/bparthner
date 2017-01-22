@@ -118,14 +118,6 @@ class ControllerProductSpecial extends Controller {
 
     $url = $this->getURL(array('filter', 'sort', 'order', 'limit'));
 
-    if (isset($this->request->get['limit'])) {
-      $limit = (int)$this->request->get['limit'];
-    } else if (empty($data['categories'])) {
-      $limit = 15;
-    } else {
-      $limit = 12;
-    }
-
     $data['sorts'][] = array(
       //'text'  => $this->language->get('text_name_asc'),
         'text' => 'По новизне',
@@ -172,11 +164,7 @@ class ControllerProductSpecial extends Controller {
 
     $data['limits'] = array();
 
-    if (empty($data['categories'])) {
-      $limits = array(15, 25, 50);
-    } else {
-      $limits = array(12, 24, 48);
-    }
+    $limits = array(15, 25, 50);
 
     sort($limits);
 
@@ -254,15 +242,9 @@ class ControllerProductSpecial extends Controller {
       );
     }
 
-    $pagination = new Pagination();
-    $pagination->total = $product_total;
-    $pagination->page = $page;
-    $pagination->limit = $limit;
-    $pagination->url = $this->url->link('product/special', $url . '&page={page}');
-
-    $data['pagination'] = $pagination->render();
-
-    $data['results'] = sprintf($this->language->get('text_pagination'), ($product_total) ? (($page - 1) * $limit) + 1 : 0, ((($page - 1) * $limit) > ($product_total - $limit)) ? $product_total : ((($page - 1) * $limit) + $limit), $product_total, ceil($product_total / $limit));
+    $data['pages_count'] = ceil($product_total / $limit);
+    $data['current_page'] = $page;
+    $data['pagination_url'] = $this->url->link('product/latest', $url . '&page={page}');
 
     // http://googlewebmastercentral.blogspot.com/2011/09/pagination-with-relnext-and-relprev.html
     if ($page == 1) {
@@ -277,12 +259,7 @@ class ControllerProductSpecial extends Controller {
       $this->document->addLink($this->url->link('product/special', 'page='. ($page + 1), 'SSL'), 'next');
     }
 
-    $data['sort'] = $sort;
-    $data['order'] = $order;
-    $data['limit'] = $limit;
-
     $data['continue'] = $this->url->link('common/home');
-
     $data['column_left'] = $this->load->controller('common/column_left');
     $data['column_right'] = $this->load->controller('common/column_right');
     $data['content_top'] = $this->load->controller('common/content_top');

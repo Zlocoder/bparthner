@@ -65,7 +65,7 @@ class ControllerProductLatest extends Controller {
     if (isset($this->request->get['limit'])) {
         $limit = (int)$this->request->get['limit'];
     } else {
-        $limit = 15;
+        $limit = $this->config->get('config_product_limit');
     }
 
     if (isset($this->request->get['page'])) {
@@ -94,14 +94,6 @@ class ControllerProductLatest extends Controller {
     }
 
     $url = $this->getURL(array('filter', 'sort', 'order', 'limit'));
-
-    if (isset($this->request->get['limit'])) {
-      $limit = (int)$this->request->get['limit'];
-    } else if (empty($data['categories'])) {
-      $limit = 15;
-    } else {
-      $limit = 12;
-    }
 
     $data['sorts'][] = array(
       //'text'  => $this->language->get('text_name_asc'),
@@ -149,11 +141,7 @@ class ControllerProductLatest extends Controller {
 
     $data['limits'] = array();
 
-    if (empty($data['categories'])) {
-      $limits = array(15, 25, 50);
-    } else {
-      $limits = array(12, 24, 48);
-    }
+    $limits = array(15, 25, 50);
 
     sort($limits);
 
@@ -228,15 +216,21 @@ class ControllerProductLatest extends Controller {
         );
       }
 
-      $url = '';
-
-      if (isset($this->request->get['limit'])) {
-        $url .= '&limit=' . $this->request->get['limit'];
-      }
-
       $data['pages_count'] = ceil($product_total / $limit);
       $data['current_page'] = $page;
       $data['pagination_url'] = $this->url->link('product/latest', $url . '&page={page}');
+
+      // http://googlewebmastercentral.blogspot.com/2011/09/pagination-with-relnext-and-relprev.html
+      if ($page == 1) {
+          $this->document->addLink($this->url->link('product/special', '', 'SSL'), 'canonical');
+      } elseif ($page == 2) {
+          $this->document->addLink($this->url->link('product/special', '', 'SSL'), 'prev');
+      } else {
+          $this->document->addLink($this->url->link('product/special', 'page='. ($page - 1), 'SSL'), 'prev');
+      }
+      if ($limit && ceil($product_total / $limit) > $page) {
+          $this->document->addLink($this->url->link('product/special', 'page='. ($page + 1), 'SSL'), 'next');
+      }
 
       if (file_exists(DIR_TEMPLATE . $view_path)) {
         $this->response->setOutput($this->load->view($view_path, $data));

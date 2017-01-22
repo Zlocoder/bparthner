@@ -132,11 +132,7 @@
 
       $data['limits'] = array();
 
-      if (empty($data['categories'])) {
-        $limits = array(15, 25, 50);
-      } else {
-        $limits = array(12, 24, 48);
-      }
+      $limits = array(15, 25, 50);
 
       sort($limits);
 

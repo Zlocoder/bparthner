@@ -89,6 +89,27 @@
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <h1><?php echo $heading_title; ?></h1>
       <?php if ($products) { ?>
+      <!-- пагинация begin -->
+      <div class="nav-pages">
+        <?php if ($pages_count > 1) { ?>
+        <div class="nav-pages">
+          <label>
+            <a href="<?= str_replace('{page}', '1', $pagination_url) ?>"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+          </label>
+
+          <?php for ($num = 1; $num <= $pages_count; $num++) { ?>
+          <label>
+            <a href="<?= str_replace('{page}', $num, $pagination_url) ?>"><?= $num ?></a>
+          </label>
+          <?php } ?>
+
+          <label>
+            <a href="<?= str_replace('{page}', $pages_count, $pagination_url) ?>"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          </label>
+        </div>
+        <?php } ?>
+      </div>
+      <!-- пагинация end -->
 
       <!-- выдача товаров begin -->
 
@@ -115,18 +136,29 @@
         </div>
         <?php } ?>
       </div>
-
       <!-- выдача товаров end -->
 
-      <!-- TODO: добавить стилизацию пагинации -->
-      <!-- пагинация begin -->
-      <!--
-      <div class="row">
-          <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
-          <div class="col-sm-6 text-right"><?php echo $results; ?></div>
-      </div>
-      -->
-      <!-- пагинация end -->
+        <!-- пагинация begin -->
+        <div class="nav-pages">
+            <?php if ($pages_count > 1) { ?>
+            <div class="nav-pages">
+                <label>
+                    <a href="<?= str_replace('{page}', '1', $pagination_url) ?>"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                </label>
+
+                <?php for ($num = 1; $num <= $pages_count; $num++) { ?>
+                <label>
+                    <a href="<?= str_replace('{page}', $num, $pagination_url) ?>"><?= $num ?></a>
+                </label>
+                <?php } ?>
+
+                <label>
+                    <a href="<?= str_replace('{page}', $pages_count, $pagination_url) ?>"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </label>
+            </div>
+            <?php } ?>
+        </div>
+        <!-- пагинация end -->
 
       <?php } else { ?>
 
