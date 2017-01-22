@@ -123,10 +123,8 @@
                         <?php } ?>
 
                         <div class="trade_card_img"><img src="<?= $product['thumb'] ?>" alt="Sony VAIO" title="Sony VAIO"></div>
-                    <div class="title_trade_card"><a href="<?= $product['href'] ?>"><?= $product['name'] ?></a></div>
-                    <div class="trade_card_description"><?= $product['description'] ?></div>
 
-                        <div class="title_trade_card"><a href="index_tradecard.html"><?= $product['name'] ?></a></div>
+                        <div class="title_trade_card"><a href="<?= $product['href'] ?>"><?= $product['name'] ?></a></div>
                         <div class="trade_card_description"><?= $product['description'] ?></div>
 
                         <div class="container_price clearfix">
