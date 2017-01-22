@@ -122,35 +122,35 @@ class ControllerProductSpecial extends Controller {
       //'text'  => $this->language->get('text_name_asc'),
         'text' => 'По новизне',
         'value' => 'p.date_modified-DESC',
-        'href'  => $this->url->link('product/viewed', '&sort=p.date_modified&order=DESC' . $url)
+        'href'  => $this->url->link('product/special', '&sort=p.date_modified&order=DESC' . $url)
     );
 
     $data['sorts'][] = array(
       //'text'  => $this->language->get('text_name_asc')
         'text' => 'От А до Я',
         'value' => 'pd.name-ASC',
-        'href'  => $this->url->link('product/viewed', '&sort=pd.name&order=ASC' . $url)
+        'href'  => $this->url->link('product/special', '&sort=pd.name&order=ASC' . $url)
     );
 
     $data['sorts'][] = array(
       //'text'  => $this->language->get('text_name_desc'),
         'text' => 'От Я до А',
         'value' => 'pd.name-DESC',
-        'href'  => $this->url->link('product/viewed', '&sort=pd.name&order=DESC' . $url)
+        'href'  => $this->url->link('product/special', '&sort=pd.name&order=DESC' . $url)
     );
 
     $data['sorts'][] = array(
       //'text'  => $this->language->get('text_price_asc'),
         'text' => 'От дешевых к дорогим',
         'value' => 'p.price-ASC',
-        'href'  => $this->url->link('product/viewed', '&sort=p.price&order=ASC' . $url)
+        'href'  => $this->url->link('product/special', '&sort=p.price&order=ASC' . $url)
     );
 
     $data['sorts'][] = array(
       //'text'  => $this->language->get('text_price_desc'),
         'text'  => 'От дорогих к дешевым',
         'value' => 'p.price-DESC',
-        'href'  => $this->url->link('product/viewed', '&sort=p.price&order=DESC' . $url)
+        'href'  => $this->url->link('product/special', '&sort=p.price&order=DESC' . $url)
     );
 
     if ($this->config->get('config_review_status')) {
@@ -158,7 +158,7 @@ class ControllerProductSpecial extends Controller {
         //'text'  => $this->language->get('text_rating_desc'),
           'text'  => 'По рейтингу',
           'value' => 'rating-DESC',
-          'href'  => $this->url->link('product/viewed', '&sort=rating&order=DESC' . $url)
+          'href'  => $this->url->link('product/special', '&sort=rating&order=DESC' . $url)
       ];
     }
 
@@ -172,7 +172,7 @@ class ControllerProductSpecial extends Controller {
       $data['limits'][] = array(
           'text'  => $value,
           'value' => $value,
-          'href'  => $this->url->link('product/viewed', $url . '&limit=' . $value)
+          'href'  => $this->url->link('product/special', $url . '&limit=' . $value)
       );
     }
 
@@ -244,7 +244,7 @@ class ControllerProductSpecial extends Controller {
 
     $data['pages_count'] = ceil($product_total / $limit);
     $data['current_page'] = $page;
-    $data['pagination_url'] = $this->url->link('product/latest', $url . '&page={page}');
+    $data['pagination_url'] = $this->url->link('product/special', $url . '&page={page}');
 
     // http://googlewebmastercentral.blogspot.com/2011/09/pagination-with-relnext-and-relprev.html
     if ($page == 1) {
