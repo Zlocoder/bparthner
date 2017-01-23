@@ -131,43 +131,6 @@ class ControllerProductSearch extends Controller {
 
 		$this->load->model('catalog/category');
 
-		// убрал формирование категорий, вроде бы нет необходимости в нем
-		// 3 Level Category Search
-//		$data['categories'] = array();
-//
-//		$categories_1 = $this->model_catalog_category->getCategories(0);
-//
-//		foreach ($categories_1 as $category_1) {
-//			$level_2_data = array();
-//
-//			$categories_2 = $this->model_catalog_category->getCategories($category_1['category_id']);
-//
-//			foreach ($categories_2 as $category_2) {
-//				$level_3_data = array();
-//
-//				$categories_3 = $this->model_catalog_category->getCategories($category_2['category_id']);
-//
-//				foreach ($categories_3 as $category_3) {
-//					$level_3_data[] = array(
-//						'category_id' => $category_3['category_id'],
-//						'name'        => $category_3['name'],
-//					);
-//				}
-//
-//				$level_2_data[] = array(
-//					'category_id' => $category_2['category_id'],
-//					'name'        => $category_2['name'],
-//					'children'    => $level_3_data
-//				);
-//			}
-//
-//			$data['categories'][] = array(
-//				'category_id' => $category_1['category_id'],
-//				'name'        => $category_1['name'],
-//				'children'    => $level_2_data
-//			);
-//		}
-
 		$data['products'] = array();
 
 		if (isset($this->request->get['search']) || isset($this->request->get['tag'])) {
@@ -316,39 +279,9 @@ class ControllerProductSearch extends Controller {
 				'href'  => $this->url->link('product/search', 'sort=p.model&order=DESC' . $url)
 			);
 
-//			$url = '';
-//
-//			if (isset($this->request->get['search'])) {
-//				$url .= '&search=' . urlencode(html_entity_decode($this->request->get['search'], ENT_QUOTES, 'UTF-8'));
-//			}
-//
-//			if (isset($this->request->get['tag'])) {
-//				$url .= '&tag=' . urlencode(html_entity_decode($this->request->get['tag'], ENT_QUOTES, 'UTF-8'));
-//			}
-//
-//			if (isset($this->request->get['description'])) {
-//				$url .= '&description=' . $this->request->get['description'];
-//			}
-//
-//			if (isset($this->request->get['category_id'])) {
-//				$url .= '&category_id=' . $this->request->get['category_id'];
-//			}
-//
-//			if (isset($this->request->get['sub_category'])) {
-//				$url .= '&sub_category=' . $this->request->get['sub_category'];
-//			}
-//
-//			if (isset($this->request->get['sort'])) {
-//				$url .= '&sort=' . $this->request->get['sort'];
-//			}
-//
-//			if (isset($this->request->get['order'])) {
-//				$url .= '&order=' . $this->request->get['order'];
-//			}
-
 			$data['limits'] = array();
 
-			$limits = array_unique(array($this->config->get('config_product_limit'), 25, 50, 75, 100));
+			$limits = array(15, 25, 50);
 
 			sort($limits);
 
@@ -360,49 +293,9 @@ class ControllerProductSearch extends Controller {
 				);
 			}
 
-//			$url = '';
-//
-//			if (isset($this->request->get['search'])) {
-//				$url .= '&search=' . urlencode(html_entity_decode($this->request->get['search'], ENT_QUOTES, 'UTF-8'));
-//			}
-//
-//			if (isset($this->request->get['tag'])) {
-//				$url .= '&tag=' . urlencode(html_entity_decode($this->request->get['tag'], ENT_QUOTES, 'UTF-8'));
-//			}
-//
-//			if (isset($this->request->get['description'])) {
-//				$url .= '&description=' . $this->request->get['description'];
-//			}
-//
-//			if (isset($this->request->get['category_id'])) {
-//				$url .= '&category_id=' . $this->request->get['category_id'];
-//			}
-//
-//			if (isset($this->request->get['sub_category'])) {
-//				$url .= '&sub_category=' . $this->request->get['sub_category'];
-//			}
-//
-//			if (isset($this->request->get['sort'])) {
-//				$url .= '&sort=' . $this->request->get['sort'];
-//			}
-//
-//			if (isset($this->request->get['order'])) {
-//				$url .= '&order=' . $this->request->get['order'];
-//			}
-//
-//			if (isset($this->request->get['limit'])) {
-//				$url .= '&limit=' . $this->request->get['limit'];
-//			}
-
-			$pagination = new Pagination();
-			$pagination->total = $product_total;
-			$pagination->page = $page;
-			$pagination->limit = $limit;
-			$pagination->url = $this->url->link('product/search', $url . '&page={page}');
-
-			$data['pagination'] = $pagination->render();
-
-			$data['results'] = sprintf($this->language->get('text_pagination'), ($product_total) ? (($page - 1) * $limit) + 1 : 0, ((($page - 1) * $limit) > ($product_total - $limit)) ? $product_total : ((($page - 1) * $limit) + $limit), $product_total, ceil($product_total / $limit));
+            $data['pages_count'] = ceil($product_total / $limit);
+            $data['current_page'] = $page;
+            $data['pagination_url'] = $this->url->link('product/latest', $url . '&page={page}');
 
 			// http://googlewebmastercentral.blogspot.com/2011/09/pagination-with-relnext-and-relprev.html
 			if ($page == 1) {
