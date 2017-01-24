@@ -32,6 +32,7 @@
       <li><a href="<?php echo $shipping; ?>"><?php echo $text_shipping; ?></a></li>
       <li><a href="<?php echo $total; ?>"><?php echo $text_total; ?></a></li>
       <li><a href="<?php echo $blog; ?>">Блог</a></li>
+      <li><a href="<?php echo $services; ?>">Услуги</a></li>
       <?php if ($openbay_show_menu == 1) { ?>
       <li><a class="parent"><?php echo $text_openbay_extension; ?></a>
         <ul>
