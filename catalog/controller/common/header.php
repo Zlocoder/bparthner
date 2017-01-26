@@ -141,32 +141,32 @@ class ControllerCommonHeader extends Controller {
 
 	    $settings = setting($this->model_services_setting->settings());
 
-	    $services = [
+	    $services = array(
 	        'image' => $settings['services_logo'],
             'name' => $settings['name'],
             'href' => '',
-            'childrens' => []
-        ];
+            'childrens' => array()
+        );
 
         $menu_posts = '';
-        foreach ($this->model_services_category->post_by_category(['c.category_id' => ' = 4']) as $post) {
+        foreach ($this->model_services_category->post_by_category(array('c.category_id' => ' = 4')) as $post) {
             $menu_posts .= $post['ID'] . ',';
         }
         $menu_posts = rtrim($menu_posts, ',');
 
 	    foreach ($this->model_services_category->getCategories() as $category) {
-            $cat = [
+            $cat = array(
                 'image' => $category['image'],
                 'name' => $category['name'],
                 'href' => $this->url->link('services/category', 'path=' . $category['category_id']),
-                'childrens' => []
-            ];
+                'childrens' => array()
+            );
 
-            foreach ($this->model_services_category->post_by_category(['c.category_id' => " = {$category['category_id']}", 'p.ID' => " IN ($menu_posts)"]) as $post) {
-                $cat['childrens'][] = [
+            foreach ($this->model_services_category->post_by_category(array('c.category_id' => " = {$category['category_id']}", 'p.ID' => " IN ($menu_posts)")) as $post) {
+                $cat['childrens'][] = array(
                     'name' => $post['title'],
                     'href' => $this->url->link('services/single', 'pid=' . $post['ID'])
-                ];
+                );
             }
 
             $services['childrens'][] = $cat;
