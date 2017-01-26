@@ -1,16 +1,31 @@
 <?php echo $header; ?>
 
-    <div class="container">
-    <div class="row">
-        <div class="way">
-            <span class="way1"><a href="<?= $home ?>">Главная</a> </span>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <span class="way2"><a href="<?= $services ?>">Статьи</a></span>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <span class="way2"> <a href="#"><?= $category_info['name'] ?></a></span>
-        </div>
-    </div>
+<div class="container">
+    <!-- breadcrumbs begin -->
+    <div class="way">
+        <?php foreach ($breadcrumbs as $i => $breadcrumb) { ?>
 
+        <span><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></span>
+        <? if ($i < count($breadcrumbs) - 1) { ?>
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+        <? } ?>
+        <?php } ?>
+    </div>
+    <!-- breadcrumbs end -->
+
+    <div class="polygraphy"><?= $category_info['name'] ?></div>
+
+</div>
+
+<div class="container">
+    <?= html_entity_decode($category_info['description']) ?>
+</div>
+
+<div class="container">
+    // цикл постов каждый пост это квадратик как на странице gen-separation в верстке
+</div>
+
+    <div class="container">
         <div class="article clearfix">
             <?= $column_left ?>
 

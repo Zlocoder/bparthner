@@ -81,7 +81,19 @@ class ControllerServicesCategory extends Controller {
         $data['home'] = $this->url->link('common/home');
         $data['services'] = $this->url->link('services/home');
 
-		$data['breadcrumbs'] = array();
+        $data['breadcrumbs'] = array();
+
+        $data['breadcrumbs'][] = array(
+            'text' => $this->language->get('text_home'),
+            'href' => $this->url->link('common/home')
+        );
+
+        /*
+        $data['breadcrumbs'][] = array(
+            'text' => 'Услуги',
+            'href' => '#'
+        );
+        */
 
 		if (isset($this->request->get['path'])) {
 			$url = '';
