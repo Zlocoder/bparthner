@@ -1859,6 +1859,7 @@ span.tags-article2{
 
 .article-left{
 	float: left;
+	padding-top: 15px;
 }
 
 .article-right{
