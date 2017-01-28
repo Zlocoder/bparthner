@@ -122,12 +122,12 @@
       );
 
       if ($this->config->get('config_review_status')) {
-        $data['sorts'][] = [
+        $data['sorts'][] = array(
           //'text'  => $this->language->get('text_rating_desc'),
             'text'  => 'По рейтингу',
             'value' => 'rating-DESC',
             'href'  => $this->url->link('product/viewed', '&sort=rating&order=DESC' . $url)
-        ];
+        );
       }
 
       $data['limits'] = array();
