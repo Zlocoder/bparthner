@@ -137,7 +137,7 @@
 
           <?php echo $captcha; ?>
 
-          <input type="submit" class="check-in" value="Оформить заказ">
+          <input type="submit" class="check-in" value="Отправить">
         </form>
       </div>
     </div>
