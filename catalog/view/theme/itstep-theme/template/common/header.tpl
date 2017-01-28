@@ -71,9 +71,9 @@
             <li><a href="<?= $about ?>">О компании</a></li>
             <li><a href="<?= $blog ?>">Статьи</a></li>
             <li><a href="<?= $delivery ?>">Доставка</a></li>
-            <li><a href="<?= $discount ?>">Скидка</a></li>
+            <li><a href="<?= $specials ?>">Скидка</a></li>
+            <li><a href="<?= $viewed ?>">Просмотренные</a></li>
             <li><a href="<?= $contact ?>">Контакты</a></li>
-            <li><a href="<?= $login ?>">Войти</a></li>
           </ul>
         </nav>
       </div>

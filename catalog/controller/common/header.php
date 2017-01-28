@@ -74,7 +74,8 @@ class ControllerCommonHeader extends Controller {
         $data['about'] = $this->url->link('information/information', 'information_id=4', 'SSL');
         $data['blog'] = $this->url->link('blog/home');
         $data['delivery'] = $this->url->link('information/information', 'information_id=6', 'SSL');
-        $data['discount'] = $this->url->link('information/information', 'information_id=3', 'SSL');
+        $data['specials'] = $this->url->link('product/special', '', 'SSL');
+        $data['viewed'] = $this->url->link('product/viewed', '', 'SSL');
         $data['contact'] = $this->url->link('information/contact');
         $data['login'] = $this->url->link('account/login', '', 'SSL');
         $data['logout'] = $this->url->link('account/logout', '', 'SSL');
