@@ -14,6 +14,7 @@
         <!-- breadcrumbs end -->
     </div>
 
+    <!--
     <div class="filters">
         <form id="filter">
             <div class="line" style="text-align: center; display: none;">
@@ -28,12 +29,6 @@
                         <?php } ?>
                     </select>
                 </div>
-
-                <!--<div class="select-container-big">
-                    от <span class="min-price">57</span>
-                    <input type="range" name="price" min="0" max="10000" step="1"> <span class="max-price">10000</span> грн.
-                    <input type="submit" value="OK">
-                </div>-->
 
                 <div class="paygering">
                     <span>Показывать по</span>
@@ -84,6 +79,7 @@
             </script>
         </form>
     </div>
+    -->
 
     <div class="row">
         <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
