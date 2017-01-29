@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 
-<div class="container">
+<div class="container servicepage">
     <div class="polygraphy"><?php echo ucfirst($post['title']); ?></div>
 
     <?= $content_top ?>

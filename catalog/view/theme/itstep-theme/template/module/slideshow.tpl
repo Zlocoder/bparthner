@@ -16,7 +16,9 @@
       items: 1,
       autoplay: true,
       autoplayTimeout: 3000,
-      loop: true
+      loop: true,
+      nav: true,
+      navText: ['<i class="fa fa-angle-left fa-5x" aria-hidden="true"></i>', '<i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>']
     });
   });
 </script>

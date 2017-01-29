@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 
-<div class="container">
+<div class="container homepage">
     <?php echo $content_top; ?>
 
     <?php echo $content_bottom; ?>

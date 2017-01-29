@@ -2585,3 +2585,14 @@ width: 100%;
 .table {
     margin-bottom: 0;
 }
+
+.homepage .home-slider .owl-nav {
+	display: none;
+}
+
+.servicepage .home-slider {
+	margin-top: 25px;
+	box-shadow: 0 0 10px 2px #ededed;
+	background-color: #fff;
+	border-radius: 10px;
+}
