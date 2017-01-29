@@ -31,11 +31,17 @@ class ControllerCommonContentTop extends Controller {
 			$layout_id = $this->model_catalog_information->getInformationLayoutId($this->request->get['information_id']);
 		}
 
+		if ($route == 'services/single' && isset($this->request->get['pid'])) {
+		    $this->load->model('services/post');
+
+		    $layout_id = $this->model_services_post->getPostLayoutId($this->request->get['pid']);
+        }
+
 		if (!$layout_id) {
 			$layout_id = $this->model_design_layout->getLayout($route);
 		}
 
-		if (!$layout_id) {
+        if (!$layout_id) {
 			$layout_id = $this->config->get('config_layout_id');
 		}
 
