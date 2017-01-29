@@ -12,7 +12,7 @@
         </div>
       <?php } ?>
 
-      <div class="new2"></div>
+      <?php if ($product['new']) { ?><div class="new2"></div><?php } ?>
 
       <div class="trade_card_img">
         <img src="<?= $product['thumb'] ?>" alt="<?= $product['name'] ?>" title="<?= $product['name']?>" />

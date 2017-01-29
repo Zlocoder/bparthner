@@ -72,7 +72,10 @@ class ControllerModuleViewed extends Controller {
 					$rating = false;
 				}
 
-				$data['products'][] = array(
+                $date_modified = date_create_from_format('Y-m-d H:i:s', $product_info['date_modified'])->getTimestamp();
+                $date_now = time();
+
+                $data['products'][] = array(
 					'product_id'  => $product_info['product_id'],
 					'thumb'       => $image,
 					'name'        => $product_info['name'],
@@ -81,7 +84,8 @@ class ControllerModuleViewed extends Controller {
 					'special'     => $special,
 					'tax'         => $tax,
 					'rating'      => $rating,
-					'href'        => $this->url->link('product/product', 'product_id=' . $product_info['product_id'])
+					'href'        => $this->url->link('product/product', 'product_id=' . $product_info['product_id']),
+                    'new'         => ($date_now - $date_modified) <= 2592000
 				);
 			}
 		}

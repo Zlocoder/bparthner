@@ -426,9 +426,6 @@ color:black;
 	-o-user-select: none;/* чтобы нельзя было выделить или скопировать текст!  */
 	user-select: none;/* чтобы нельзя было выделить или скопировать текст!  */
 }
-.products {
-	font-size: 0;
-}
 .products:after {
     content: '';
     display: block;
@@ -2595,4 +2592,8 @@ width: 100%;
 	box-shadow: 0 0 10px 2px #ededed;
 	background-color: #fff;
 	border-radius: 10px;
+}
+
+.homepage .products .owl-nav {
+	top: 200px;
 }

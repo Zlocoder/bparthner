@@ -9,29 +9,23 @@
 <script>
     $('.latests').owlCarousel({
         items: 5,
-        dotsClass: 'dots',
-        dotClass: 'dot',
-        onInitialized: function () {
-            $('.latests .dot').css('width', $('.latests .dots').width() / $('.latests .dot').length);
-        }
+        dots: false,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left fa-5x" aria-hidden="true"></i>', '<i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>'],
     });
 
     $('.specials').owlCarousel({
         items: 5,
-        dotsClass: 'dots',
-        dotClass: 'dot',
-        onInitialized: function () {
-            $('.specials .dot').css('width', $('.specials .dots').width() / $('.specials .dot').length);
-        }
+        dots: false,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left fa-5x" aria-hidden="true"></i>', '<i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>'],
     });
 
     $('.viewed').owlCarousel({
         items: 5,
-        dotsClass: 'dots',
-        dotClass: 'dot',
-        onInitialized: function () {
-            $('.viewed .dot').css('width', $('.viewed .dots').width() / $('.viewed .dot').length);
-        }
+        dots: false,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left fa-5x" aria-hidden="true"></i>', '<i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>'],
     });
 </script>
 
