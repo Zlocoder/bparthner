@@ -13,18 +13,23 @@
     </div>
     <!-- breadcrumbs end -->
 
-    <div class="polygraphy"><?= $category_info['name'] ?></div>
+    <div class="annotation">
+        <div class="title2"><?= $category_info['name'] ?></div>
+        <div class="description"><?= html_entity_decode($category_info['description']) ?></div>
+    </div>
 
 </div>
 
-<div class="container">
-    <?= html_entity_decode($category_info['description']) ?>
+<div class="container clearfix">
+    <?php foreach ($posts as $post) { ?>
+        <div class="for-men-product">
+            <div class="for-title"><a href="<?php echo HTTP_SERVER; ?>index.php?route=services/single&amp;pid=<?php echo $post['ID']; ?>"><?php echo ucfirst($post['title']); ?></a></div>
+            <div class="for-img"><img src="<?php echo $post['post_thumbnail']; ?>" alt=""></div>
+        </div>
+    <?php } ?>
 </div>
 
-<div class="container">
-    // цикл постов каждый пост это квадратик как на странице gen-separation в верстке
-</div>
-
+    <!--
     <div class="container">
         <div class="article clearfix">
             <?= $column_left ?>
@@ -48,7 +53,6 @@
 
                             <?php $tags = explode(',', $post['tag']);?>
                             <?php for ($i=0; $i < count($tags); $i++) : ?>
-                                <!--<a href="<?php echo HTTP_SERVER; ?>index.php?route=services/tag&amp;tag=<?php echo urldecode($tags[$i]); ?>"><?php echo ucfirst($tags[$i]); ?></a>-->
                                 <span class="tags-article">#<span class="tags-article1"><?php echo $tags[$i]; ?></span></span>
                             <?php endfor; ?>
 
@@ -79,5 +83,6 @@
             </div>
         </div>
     </div>
+    -->
 
 <?php echo $footer; ?>

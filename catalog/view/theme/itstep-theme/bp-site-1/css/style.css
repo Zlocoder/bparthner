@@ -2139,11 +2139,6 @@ footer.no-margin{
     margin-right: 20px;
     margin-top: 5px;
 }
-.annotation .description {
-	width: calc(100% - 466px);
-	display: inline-block;
-	vertical-align: top;
-}
 .annotation .description h2 {
 	margin-top: 0;
 }
@@ -2294,10 +2289,12 @@ footer.no-margin{
 	border: 1px solid #ebebeb;
 	/*padding-top: 7px;*/
 	text-align: center;
-	width: 99%;
+	width: 265px;
+	margin-left: 10px;
+	margin-right: 10px;
 
 /*временная заплатка*/
-height: 195px;
+height: 220px;
 overflow: hidden;
 /*временная заплатка*/
 
