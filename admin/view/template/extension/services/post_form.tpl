@@ -60,7 +60,7 @@
                   <li><a href="#data" aria-controls="data" data-toggle="tab"><?php echo $tab_data; ?></a></li>
                   <li><a href="#relation" aria-controls="relation" data-toggle="tab"><?php echo $tab_relation; ?></a></li>
                   <li><a href="#image" aria-controls="image" data-toggle="tab"><?php echo $tab_image; ?></a></li>
-                  <li><a href="#design" aria-controls="design" data-toggle="tab"><?php echo $tab_design; ?></a></li>
+                  <li><a href="#post-design" aria-controls="design" data-toggle="tab"><?php echo $tab_design; ?></a></li>
                 </ul>
 
                 <div class="tab-content">
@@ -354,7 +354,7 @@
                   </div>
                   <!--== #Image ==-->
 
-                  <div class="tab-pane" id="design">
+                  <div class="tab-pane" id="post-design">
                     <div class="table-responsive">
                       <table class="table table-bordered">
                         <thead>

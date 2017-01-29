@@ -60,7 +60,7 @@
                <ul style="margin-bottom:10px;" class="nav nav-tabs">
                 <li class="active"><a href="#general"  aria-controls="general" data-toggle="tab"><?php echo $tab_general; ?></a></li>
                 <li><a href="#data" aria-controls="data" data-toggle="tab"><?php echo $tab_data; ?></a></li>
-                <li><a href="#design" aria-controls="design" data-toggle="tab"><?php echo $tab_design; ?></a></li>
+                <li><a href="#category-design" aria-controls="design" data-toggle="tab"><?php echo $tab_design; ?></a></li>
               </ul>   
 
               <div class="tab-content">
@@ -262,7 +262,7 @@
                 </div>
                 <!--== #data ==-->
 
-                <div class="tab-pane table-responsive" id="design">
+                <div class="tab-pane table-responsive" id="category-design">
                   <table class="table table-bordered table-hover">
                     <thead>
                       <tr>
