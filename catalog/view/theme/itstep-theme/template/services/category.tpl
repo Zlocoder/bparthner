@@ -20,12 +20,11 @@
 <div class="container">
     <?= html_entity_decode($category_info['description']) ?>
 </div>
-
 <?php foreach($posts as $post){ ?>
 <div class="service">
 
     <div class="for-title"><a href="<?php echo HTTP_SERVER; ?>index.php?route=services/single&amp;pid=<?php echo $post['ID'];?>"><?=html_entity_decode($post['title'])?></a></div>
-    <div class="for-img"><img src="<?=$post['image']?>"></div>
+    <div class="for-img"><img src="<?=$post['post_thumbnail'] ?>"></div>
 </div>
 
 <?php } ?>
