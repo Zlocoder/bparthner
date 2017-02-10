@@ -278,16 +278,12 @@ display: inline-block;
 
 }
 
-.container div a{
+.container  a{
 text-decoration: none;
-color:black;
+color:white;
 	font-family: "Roboto-Light", serif;
 	font-size: 12pt;
 
-}
-
-.container div a:hover {
-	text-decoration: underline;
 }
 
 .title{
@@ -2303,10 +2299,6 @@ footer.no-margin{
 	margin-bottom: 10px;
 }
 
-.header-gen a{
-	text-decoration:none;
-	color: white;
-}
 
 .for-men-product{
 	display: inline-block;

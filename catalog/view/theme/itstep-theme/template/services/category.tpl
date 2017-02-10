@@ -18,8 +18,7 @@
 </div>
 
 <div class="container clearfix">
-    <?= html_entity_decode($category_info['description']) ?>
-
+    <div class="annotation"><?= html_entity_decode($category_info['description']) ?></div>
 <?php foreach($posts as $post){ ?>
     <div class="service">
         <div class="header-gen"><a href="<?php echo HTTP_SERVER; ?>index.php?route=services/single&amp;pid=<?php echo $post['ID'];?>"><?=html_entity_decode($post['title'])?></a></div>
