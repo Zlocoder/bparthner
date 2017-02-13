@@ -134,10 +134,11 @@ $(document).ready(function() {
 // Cart add remove functions
 var cart = {
 	'add': function(product_id, quantity) {
-		$('<form method="post" action="index.php?route=checkout/cart/add" />')
+		$('<form method="post" action="index.php?route=checkout/cart/add" style="display: none;"/>')
 			.append($('<input type="hidden" name="redirect_url" value="' + document.location + '" />'))
 			.append($('<input type="hidden" name="product_id" value="' + product_id + '" />'))
 			.append($('<input type="hidden" name="quantity" value="' + (typeof(quantity) != 'undefined' ? quantity : 1) + '" />'))
+			.appendTo($('body'))
 			.submit();
 
 		/*
