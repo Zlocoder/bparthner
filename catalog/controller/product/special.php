@@ -107,7 +107,7 @@ class ControllerProductSpecial extends Controller {
     if (isset($this->request->get['sort'])) {
       $sort = $this->request->get['sort'];
     } else {
-      $sort = 'p.date_modified';
+      $sort = 'percentage';
     }
 
     if (isset($this->request->get['order'])) {
