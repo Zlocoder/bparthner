@@ -2597,3 +2597,31 @@ width: 100%;
 .homepage .products .owl-nav {
 	top: 200px;
 }
+
+form.onpay {
+	background: none;
+	box-shadow: none;
+	margin-top: 20px;
+	text-align: center;
+}
+
+form.onpay input {
+	width: 200px;
+	background: #fff;
+	background: linear-gradient(to top, #2d5e96, #3071bf, #2d5e96);
+	color: #fff;
+	border: 1px solid #2d5e96;
+	padding: 8px 13px;
+}
+
+.cart_table tbody .totals:first-of-type td {
+	padding-top: 20px;
+}
+
+.cart_table tbody .totals td {
+	border: none;
+}
+
+.border-check.confirm h1 {
+	margin-bottom: 50px;
+}

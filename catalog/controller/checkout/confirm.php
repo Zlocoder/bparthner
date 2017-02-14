@@ -194,7 +194,7 @@ class ControllerCheckoutConfirm extends Controller {
 				$order_data['shipping_code'] = '';
 			}
 
-			$order_data['products'] = array();
+            $order_data['products'] = array();
 
 			foreach ($this->cart->getProducts() as $product) {
 				$option_data = array();
@@ -322,6 +322,7 @@ class ControllerCheckoutConfirm extends Controller {
 			$data['column_price'] = $this->language->get('column_price');
 			$data['column_total'] = $this->language->get('column_total');
 
+            $this->load->model('tool/image');
 			$this->load->model('tool/upload');
 
 			$data['products'] = array();
@@ -370,12 +371,20 @@ class ControllerCheckoutConfirm extends Controller {
 					}
 				}
 
-				$data['products'][] = array(
+                if ($product['image']) {
+                    $image = $this->model_tool_image->resize($product['image'], $this->config->get('config_image_cart_width'), $this->config->get('config_image_cart_height'));
+                } else {
+                    $image = '';
+                }
+
+                $data['products'][] = array(
 					'cart_id'    => $product['cart_id'],
 					'product_id' => $product['product_id'],
 					'name'       => $product['name'],
 					'model'      => $product['model'],
-					'option'     => $option_data,
+                    'thumb'      => $image,
+                    'article'    => $product['sku'],
+                    'option'     => $option_data,
 					'recurring'  => $recurring,
 					'quantity'   => $product['quantity'],
 					'subtract'   => $product['subtract'],
