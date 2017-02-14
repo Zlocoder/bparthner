@@ -107,4 +107,4 @@
   </div>
 </div>
 
-<?php $footer ?>
+<?= $footer ?>
