@@ -2625,3 +2625,18 @@ form.onpay input {
 .border-check.confirm h1 {
 	margin-bottom: 50px;
 }
+
+.border-check.success h1 {
+	margin-bottom: 20px;
+}
+
+.border-check.success a.check-in {
+	display: inline-block;
+	width: 200px;
+	background: #fff;
+	background: linear-gradient(to top, #2d5e96, #3071bf, #2d5e96);
+	color: #fff;
+	border: 1px solid #2d5e96;
+	padding: 8px 13px;
+	text-decoration: none;
+}
