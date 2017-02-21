@@ -453,6 +453,7 @@ margin-top: 12px;
 border-radius: 4px;
 position: relative;
 padding: 0 10px 11px 10px;
+text-align:center;
 box-sizing: border-box;/* чтобы из за падинга не распухал блок  */
 -webkit-user-select: none;/* чтобы нельзя было выделить или скопировать текст!  */
 	-moz-user-select: none;/* чтобы нельзя было выделить или скопировать текст!  */
@@ -570,15 +571,14 @@ position: absolute;
 .card_price{
 	color: #ff7800;	
 	font-weight: bold;
-	font-family: "Roboto-Regular", serif;
-float: left;
-font-size: 15pt;
+	font-family: "Roboto-Regular", serif; 
+	font-size: 15pt;
 	transform: translateY(50%);
+	display: block;
 }
 
 .container_price button{
 	font-family: "Roboto-Light", serif;
-	float: right;
 	width: 90px;
 	height: 41px;
 /* 	border-top: 5px groove #1461bc; */
@@ -591,7 +591,6 @@ font-size: 15pt;
 	font-weight: bold;
 	border-radius: 4px;
 	outline: none;/* чтобы небыло "рамочки" при клике  */
-
 }
 
 .container_price{
