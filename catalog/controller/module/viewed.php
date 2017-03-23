@@ -83,6 +83,7 @@ class ControllerModuleViewed extends Controller {
 					'price'       => $price,
 					'special'     => $special,
 					'tax'         => $tax,
+                    'minimum'     => $product_info['minimum'],
 					'rating'      => $rating,
 					'href'        => $this->url->link('product/product', 'product_id=' . $product_info['product_id']),
                     'new'         => ($date_now - $date_modified) <= 2592000

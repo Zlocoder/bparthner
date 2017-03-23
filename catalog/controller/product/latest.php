@@ -211,6 +211,7 @@ class ControllerProductLatest extends Controller {
             'price'       => $price,
             'special'     => $special,
             'tax'         => $tax,
+            'minimum'     => $result['minimum'],
             'rating'      => $rating,
             'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
         );

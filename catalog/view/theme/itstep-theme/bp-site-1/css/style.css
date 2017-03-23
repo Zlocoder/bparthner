@@ -557,18 +557,16 @@ position: absolute;
 
 
 .card_price{
-	color: #ff7800;	
+	color: #ff7800;
 	font-weight: bold;
 	font-family: "Roboto-Regular", serif;
-float: left;
-font-size: 15pt;
+	font-size: 15pt;
 	transform: translateY(50%);
 }
 
 .container_price button{
 	font-family: "Roboto-Light", serif;
-	float: right;
-	width: 90px;
+	display: inline-block;
 	height: 41px;
 /* 	border-top: 5px groove #1461bc; */
 	background: linear-gradient(to bottom, #3074c5, #2d5d96);
@@ -589,6 +587,7 @@ width: 195px;
 margin: 0 auto;
 margin-top: 16px;
 font-size: 15pt;
+text-align: center;
 }
 
 /*.all_new:before {
@@ -679,17 +678,22 @@ display: none;
 	padding: 0;
 }
 #nav ul.subs {
+	visibility: hidden;
+	opacity: 0;
 	background-color: #fff;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 	color: #333;
-	display: none;
 	position: absolute;
+	-webkit-transition: opacity 1s 0.3s;
+	-moz-transition: opacity 1s 0.3s;
+	-o-transition: opacity 1s 0.3s;
+	transition: opacity 1s 0.3s;
 	left: 0;
 	top: 50px;
 	width: 100%;
 	padding: 1% 0;
 	box-sizing: border-box;
-	font-size: 0px;
+	font-size: 0;
 	/*transition: display .2s ease;*/
 }
 #nav > li {
@@ -735,7 +739,7 @@ display: none;
 }
 /*=======================================*/
 /*стили для выпадающей части*/
-#nav li:hover ul.subs { display: block; }
+#nav li:hover ul.subs { visibility: visible; opacity: 1;}
 #nav ul.subs > li {
 	display: inline-block;
 	float: none;

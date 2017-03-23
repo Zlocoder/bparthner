@@ -21,9 +21,8 @@
         <div class="trade_card_description"><?= $product['description'] ?></div>
 
         <div class="container_price clearfix">
+          <button type="submit" onclick="cart.add(<?= $product['product_id'] ?>);">Купить (<?= $product['minimum'] ?> шт.)</button>
           <div class="card_price"><?= preg_replace('/[^\d]+$/', '<sup>$0</sup>', $product['price']) ?></div>
-
-          <button type="submit" onclick="cart.add(<?= $product['product_id'] ?>);">Купить</button>
         </div>
       </div>
   <?php } ?>

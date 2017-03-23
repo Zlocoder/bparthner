@@ -69,7 +69,8 @@ class ControllerModuleSpecial extends Controller {
 					'price'       => $price,
 					'special'     => $special,
 					'tax'         => $tax,
-					'rating'      => $rating,
+                    'minimum'     => $result['minimum'],
+                    'rating'      => $rating,
 					'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id']),
                     'new'         => ($date_now - $date_modified) <= 2592000
 				);
