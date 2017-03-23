@@ -19,11 +19,11 @@
       <div class="panel-body">
         <form class="form-horizontal">
           <ul id="order" class="nav nav-tabs nav-justified">
-            <li class="disabled active"><a href="#tab-customer" data-toggle="tab">1. <?php echo $tab_customer; ?></a></li>
-            <li class="disabled"><a href="#tab-cart" data-toggle="tab">2. <?php echo $tab_product; ?></a></li>
-            <li class="disabled"><a href="#tab-payment" data-toggle="tab">3. <?php echo $tab_payment; ?></a></li>
-            <li class="disabled"><a href="#tab-shipping" data-toggle="tab">4. <?php echo $tab_shipping; ?></a></li>
-            <li class="disabled"><a href="#tab-total" data-toggle="tab">5. <?php echo $tab_total; ?></a></li>
+            <li class="active"><a href="#tab-customer" data-toggle="tab">1. <?php echo $tab_customer; ?></a></li>
+            <li class=""><a href="#tab-cart" data-toggle="tab">2. <?php echo $tab_product; ?></a></li>
+            <li class=""><a href="#tab-payment" data-toggle="tab">3. <?php echo $tab_payment; ?></a></li>
+            <li class=""><a href="#tab-shipping" data-toggle="tab">4. <?php echo $tab_shipping; ?></a></li>
+            <li class=""><a href="#tab-total" data-toggle="tab">5. <?php echo $tab_total; ?></a></li>
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="tab-customer">
@@ -947,10 +947,6 @@
     </div>
   </div>
   <script type="text/javascript"><!--
-// Disable the tabs
-$('#order a[data-toggle=\'tab\']').on('click', function(e) {
-	return false;
-});
 
 var token = '';
 
