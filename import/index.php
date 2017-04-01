@@ -1,0 +1,1 @@
+<a href="/import/import1.php">Начать</a>
