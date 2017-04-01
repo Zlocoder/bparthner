@@ -32,7 +32,7 @@
         </div>
 
         <div class="product-info">
-            <div class="product-info_title"><?= $product_name ?> <?= $model ?></div>
+            <div class="product-info_title"><?= $product_name ?></div>
 
             <div class="product-info_desc clearfix">
                 <table class="product_desc" cellspacing="0">
